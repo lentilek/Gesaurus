@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,13 +8,18 @@ public class Pot : MonoBehaviour
 {
     public static Pot Instance;
 
+    public Recipe[] recipes;
+
     /*[HideInInspector] */public IngredientButton ing1, ing2, ing3;
 
-    public Image image1, image2, image3;
+    public Image image1, image2, image3, potionColor;
+    [HideInInspector] public bool isTherePotion;
+    [SerializeField] private Color regularPotion, weirdPotion;
 
     private void Awake()
     {
         Instance = this;
+        isTherePotion = false;
     }
     private void Update()
     {
@@ -87,6 +93,32 @@ public class Pot : MonoBehaviour
         if (ing3 != null && i == 3)
         {
             ing3.UndoIngredient();
+        }
+    }
+    public void Mix()
+    {
+        if (ing1 != null && ing2 != null && ing3 != null)
+        {
+            isTherePotion = true;
+            bool goodPotion = false;
+            foreach (var rec in recipes)
+            {
+                if (rec.ing.Contains(ing1.ingredient) && rec.ing.Contains(ing2.ingredient) 
+                    && rec.ing.Contains(ing3.ingredient))
+                {
+                    potionColor.color = rec.potionColor;
+                    goodPotion = true;
+                    break;
+                }
+            }
+            if (goodPotion)
+            {
+                //
+            }
+            else
+            {
+                potionColor.color = weirdPotion;
+            }
         }
     }
 }

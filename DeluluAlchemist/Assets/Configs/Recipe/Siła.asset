@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: Wzrok
+  m_Name: "Si\u0142a"
   m_EditorClassIdentifier: 
-  recName: Wzrok
+  recName: "Si\u0142a"
   descriptions:
-  - My glasses don't work as well anymore. DO you have anything for me?
-  potionColor: {r: 0.8207547, g: 0.39675674, b: 0.081301175, a: 1}
+  - I feel so weak...
+  potionColor: {r: 0.17578822, g: 0.81960785, b: 0.08235294, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
-  - {fileID: 11400000, guid: b6b9e690dec43b145a268b86f21aef12, type: 2}
-  - {fileID: 11400000, guid: fcec8d04631f4bc4c94072a392188908, type: 2}
+  - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}
+  - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
