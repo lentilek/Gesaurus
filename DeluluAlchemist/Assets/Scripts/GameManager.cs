@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     public void EarnBalls()
     {
         magicBalls += earnMagic;
+        if (Random.Range(0, 101) < 70) magicBalls++;
         reputation += reputationGain;
 
         MagicCounter();
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
     }
     public void ReputationCounter()
     {
+        if (reputation > 10) reputation = 10;
         reputationCounter.text = reputation.ToString();
     }
 }

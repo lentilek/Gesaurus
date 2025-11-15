@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,7 +9,7 @@ public class IngredientButton : MonoBehaviour
     public Ingredient ingredient;
 
     [SerializeField] private GameObject active, inactive, replenishCounter;
-    [SerializeField] private UnityEngine.UI.Image replenishFill;
+    [SerializeField] private Image replenishFill;
     [SerializeField] private float replenishTime, currentTime;
     private int potButton;
     private bool replenishing;
