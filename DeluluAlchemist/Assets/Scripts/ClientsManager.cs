@@ -53,7 +53,7 @@ public class ClientsManager : MonoBehaviour
 
         client.gameObject.SetActive(true);
 
-        StartCoroutine(WaitForClient());
+        if (GameManager.Instance.clientCounter > 0) StartCoroutine(WaitForClient());
     }
     public void EmptyClients()
     {

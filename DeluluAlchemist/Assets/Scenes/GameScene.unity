@@ -3118,16 +3118,6 @@ PrefabInstance:
       objectReference: {fileID: 1964356301}
     - target: {fileID: 4384315449513260196, guid: 26b373e3503dbc944906988d7477cd7f,
         type: 3}
-      propertyPath: maxClients
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4384315449513260196, guid: 26b373e3503dbc944906988d7477cd7f,
-        type: 3}
-      propertyPath: minClients
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4384315449513260196, guid: 26b373e3503dbc944906988d7477cd7f,
-        type: 3}
       propertyPath: magicCounter
       value: 
       objectReference: {fileID: 1036521906}

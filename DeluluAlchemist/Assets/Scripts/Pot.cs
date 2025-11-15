@@ -13,23 +13,30 @@ public class Pot : MonoBehaviour
 
     [HideInInspector]public IngredientButton ing1, ing2, ing3;
 
-    public Image image1, image2, image3, potionColor;
+    public Image image1, image2, image3, potionColor, progressFill;
     [HideInInspector] public bool isTherePotion;
     [SerializeField] private Color regularPotion, weirdPotion;
 
-    [SerializeField] private float potAnimMove, potAnimTime;
+    [SerializeField] private float potAnimMove, potAnimTime, progressTime;
+    [HideInInspector] public float currentTime;
 
     [HideInInspector] public Recipe currentRecipe;
     private SpriteState select = new SpriteState();
-    [SerializeField] private GameObject mixButton, inactiveMixButton;
+    [SerializeField] private GameObject mixButton, inactiveMixButton, progressBar;
     private void Awake()
     {
         Instance = this;
         isTherePotion = false;
         potionColor.color = regularPotion;
+        progressBar.SetActive(false);
     }
     private void Update()
     {
+        if (isTherePotion)
+        {
+            currentTime -= Time.deltaTime;
+            GetCurrentFill();
+        }
         if (ing1 != null && ing2 != null && ing3 != null)
         {
             mixButton.SetActive(true);
@@ -130,7 +137,11 @@ public class Pot : MonoBehaviour
             ing3.UndoIngredient();
         }
     }
-    public void Mix()
+    public void StartMixing()
+    {
+        StartCoroutine(Mix());
+    }
+    private IEnumerator Mix()
     {
         if (ing1 != null && ing2 != null && ing3 != null)
         {
@@ -140,6 +151,10 @@ public class Pot : MonoBehaviour
 
             isTherePotion = true;
             bool goodPotion = false;
+
+            currentTime = progressTime;
+            progressBar.SetActive(true);
+            yield return new WaitForSecondsRealtime(progressTime);
             foreach (var rec in recipes)
             {
                 if (rec.ing.Contains(ing1.ingredient) && rec.ing.Contains(ing2.ingredient) 
@@ -159,6 +174,7 @@ public class Pot : MonoBehaviour
             {
                 potionColor.color = weirdPotion;
             }
+            progressBar.SetActive(false);
         }
     }
     private void AnimateUpDown(GameObject go, float move, float time)
@@ -189,5 +205,11 @@ public class Pot : MonoBehaviour
         potionColor.color = regularPotion;
 
         isTherePotion = false;
+    }
+    private void GetCurrentFill()
+    {
+        float fill = currentTime / progressTime;
+        progressFill.fillAmount = fill;
+
     }
 }

@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
         {
             EndDay.Instance.DayFinalize();
         }
-        Debug.Log(clientCounter);
     }
     public void ClientNumberRandom()
     {

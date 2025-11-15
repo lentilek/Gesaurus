@@ -131,7 +131,7 @@ MonoBehaviour:
   portraite: {fileID: 4186504872624196189}
   text: {fileID: 5377706257519525599}
   patienceFill: {fileID: 553551831840736469}
-  maxTime: 30
+  maxTime: 45
   currentTime: 0
   patienceNoPotion: 5
   recipe: {fileID: 0}

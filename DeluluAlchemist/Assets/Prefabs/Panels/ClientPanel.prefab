@@ -131,7 +131,7 @@ MonoBehaviour:
   client1: {fileID: 5786673771388013035}
   client2: {fileID: 6309273022966927295}
   client3: {fileID: 2682146657043174377}
-  minTime: 20
+  minTime: 30
   maxTime: 40
   portraites:
   - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}

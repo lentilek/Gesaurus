@@ -30,7 +30,7 @@ public class Client : MonoBehaviour
     }
     public void GivePotion()
     {
-        if (Pot.Instance.isTherePotion)
+        if (Pot.Instance.isTherePotion && Pot.Instance.currentTime <= 0)
         {
             if (Pot.Instance.currentRecipe == recipe)
             {
@@ -70,9 +70,9 @@ public class Client : MonoBehaviour
     }
     public bool IsCorrect()
     {
-        if(recipe.ing.Contains(Pot.Instance.ing1.ingredient) && 
-            recipe.ing.Contains(Pot.Instance.ing2.ingredient)
-                    && recipe.ing.Contains(Pot.Instance.ing3.ingredient))
+        if(recipe != null && recipe.ing.Contains(Pot.Instance.ing1.ingredient) 
+            && recipe.ing.Contains(Pot.Instance.ing2.ingredient)
+            && recipe.ing.Contains(Pot.Instance.ing3.ingredient))
         {
             return true;
         }
