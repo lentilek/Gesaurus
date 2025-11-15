@@ -452,6 +452,10 @@ MonoBehaviour:
   recipes:
   - {fileID: 11400000, guid: 50bad7ecdeea5a448865af3625b68ab2, type: 2}
   - {fileID: 11400000, guid: 5dde97b3bf354794588168abee2554d6, type: 2}
+  - {fileID: 11400000, guid: 117d0c2bceea3ee49b19634889b6bed5, type: 2}
+  - {fileID: 11400000, guid: b1bc590dd8fd67845872fc6377389d8f, type: 2}
+  - {fileID: 11400000, guid: a11ed8b283980f146b9fae4426cd0340, type: 2}
+  - {fileID: 11400000, guid: 0c8ad27c2ae18fe418c683ac5fec828d, type: 2}
   ing1: {fileID: 0}
   ing2: {fileID: 0}
   ing3: {fileID: 0}
@@ -465,6 +469,8 @@ MonoBehaviour:
   potAnimMove: -200
   potAnimTime: 1
   currentRecipe: {fileID: 0}
+  mixButton: {fileID: 4694388350757463725}
+  inactiveMixButton: {fileID: 8020853647185861778}
 --- !u!1001 &655667542280346093
 PrefabInstance:
   m_ObjectHideFlags: 0

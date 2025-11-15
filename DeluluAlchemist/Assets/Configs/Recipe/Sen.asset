@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: "Si\u0142a"
+  m_Name: Sen
   m_EditorClassIdentifier: 
-  recName: "Si\u0142a"
+  recName: Sen
   descriptions:
-  - "Ugh, nie mam si\u0142y nawet nosi\u0107 w\u0142asnych zakup\xF3w..."
-  potionColor: {r: 0.17578822, g: 0.81960785, b: 0.08235294, a: 1}
+  - "Nie mog\u0119 spa\u0107, pomo\u017Cesz mi?"
+  potionColor: {r: 0.6453167, g: 0.25338197, b: 0.735849, a: 1}
   ing:
-  - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
   - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}
-  - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
+  - {fileID: 11400000, guid: b6b9e690dec43b145a268b86f21aef12, type: 2}
+  - {fileID: 11400000, guid: dd67725419ac7744c955c5252b76b0cc, type: 2}

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: "Si\u0142a"
+  m_Name: Zdrowie
   m_EditorClassIdentifier: 
-  recName: "Si\u0142a"
+  recName: Zdrowie
   descriptions:
-  - "Ugh, nie mam si\u0142y nawet nosi\u0107 w\u0142asnych zakup\xF3w..."
-  potionColor: {r: 0.17578822, g: 0.81960785, b: 0.08235294, a: 1}
+  - "Chyba jestem przezi\u0119biona..."
+  potionColor: {r: 0.81960785, g: 0.14765558, b: 0.08235294, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
-  - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}
-  - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
+  - {fileID: 11400000, guid: 18f62087f50406b4293cd466255c6174, type: 2}
+  - {fileID: 11400000, guid: fcec8d04631f4bc4c94072a392188908, type: 2}

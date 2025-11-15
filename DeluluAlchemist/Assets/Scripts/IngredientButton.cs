@@ -1,6 +1,7 @@
 using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +9,26 @@ public class IngredientButton : MonoBehaviour
 {
     public Ingredient ingredient;
 
-    [SerializeField] private GameObject active, inactive;
+    [SerializeField] private GameObject active, inactive, replenishCounter;
+    [SerializeField] private UnityEngine.UI.Image replenishFill;
+    [SerializeField] private float replenishTime, currentTime;
     private int potButton;
+    private bool replenishing;
 
+    private void Awake()
+    {
+        replenishing = false;
+        replenishCounter.SetActive(false); 
+    }
+    private void Update()
+    {
+        if (replenishing)
+        {
+            currentTime -= Time.deltaTime;
+            Time.timeScale = 1f;
+            GetCurrentFill();
+        }
+    }
     public void AddIngredient()
     {
         potButton = Pot.Instance.FindEmptySlot(this);
@@ -28,8 +46,26 @@ public class IngredientButton : MonoBehaviour
     }
     public void Replenish()
     {
-        active.gameObject.SetActive(true);
-        inactive.gameObject.SetActive(false);
-        // use magic
+        if (GameManager.Instance.magicBalls > 0)
+        {
+            replenishing = true;
+            currentTime = replenishTime;
+            inactive.gameObject.SetActive(false);
+            GameManager.Instance.magicBalls--;
+            GameManager.Instance.MagicCounter();
+            replenishCounter.SetActive(true);
+        }
+    }
+    private void GetCurrentFill()
+    {
+        float fill = currentTime / replenishTime;
+        replenishFill.fillAmount = fill;
+
+        if (replenishFill.fillAmount <= 0)
+        {
+            replenishCounter.SetActive(false);
+            replenishing = false;
+            active.gameObject.SetActive(true);
+        }
     }
 }

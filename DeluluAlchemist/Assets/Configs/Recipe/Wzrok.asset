@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recName: Wzrok
   descriptions:
-  - My glasses don't work as well anymore. DO you have anything for me?
+  - "Moje okulary nie dzia\u0142aj\u0105 ju\u017C tak dobrze co wcze\u015Bniej...
+    Mo\u017Cesz mi pom\xF3c?"
   potionColor: {r: 0.8207547, g: 0.39675674, b: 0.081301175, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}

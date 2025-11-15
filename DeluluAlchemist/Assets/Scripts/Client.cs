@@ -10,7 +10,7 @@ public class Client : MonoBehaviour
     public Image portraite;
     public TextMeshProUGUI text;
     [SerializeField] private Image patienceFill;
-    public float maxTime, currentTime;
+    public float maxTime, currentTime, patienceNoPotion;
     [HideInInspector] public Recipe recipe;
     [HideInInspector] public bool isEmpty;
 
@@ -35,30 +35,33 @@ public class Client : MonoBehaviour
             if (Pot.Instance.currentRecipe == recipe)
             {
                 GameManager.Instance.EarnBalls();
-                Pot.Instance.ing1.UseIngredient();
-                Pot.Instance.ing2.UseIngredient();
-                Pot.Instance.ing3.UseIngredient();
-                gameObject.SetActive(false);
-                Pot.Instance.EmptyPot();
             }
             else
             {
                 GameManager.Instance.BadPotion();
-                Pot.Instance.ing1.UseIngredient();
-                Pot.Instance.ing2.UseIngredient();
-                Pot.Instance.ing3.UseIngredient();
-                gameObject.SetActive(false);
-                Pot.Instance.EmptyPot();
             }
+            Pot.Instance.ing1.UseIngredient();
+            Pot.Instance.ing2.UseIngredient();
+            Pot.Instance.ing3.UseIngredient();
+            Pot.Instance.EmptyPot();
+            isEmpty = true;
+            gameObject.SetActive(false);
         }
         else
         {
-            // no potion
+            currentTime -= patienceNoPotion;
         }
     }
     private void GetCurrentFill()
     {
         float fill = currentTime / maxTime;
         patienceFill.fillAmount = fill;
+
+        if (patienceFill.fillAmount <= 0)
+        {
+            GameManager.Instance.ClientLeft();
+            isEmpty = true;
+            gameObject.SetActive(false);
+        }
     }
 }

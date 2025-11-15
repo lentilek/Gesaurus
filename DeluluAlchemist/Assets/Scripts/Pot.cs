@@ -21,13 +21,25 @@ public class Pot : MonoBehaviour
 
     [HideInInspector] public Recipe currentRecipe;
     private SpriteState select = new SpriteState();
+    [SerializeField] private GameObject mixButton, inactiveMixButton;
     private void Awake()
     {
         Instance = this;
         isTherePotion = false;
+        potionColor.color = regularPotion;
     }
     private void Update()
     {
+        if (ing1 != null && ing2 != null && ing3 != null)
+        {
+            mixButton.SetActive(true);
+            inactiveMixButton.SetActive(false);
+        }
+        else
+        {
+            mixButton.SetActive(false);
+            inactiveMixButton.SetActive(true);
+        }
         if (ing1 != null)
         {
             image1.sprite = ing1.ingredient.pot;
@@ -144,7 +156,16 @@ public class Pot : MonoBehaviour
     {
         go.transform.DOMoveY(go.transform.position.y + move, time);
     }
-
+    public void TrashPotion()
+    {
+        if (isTherePotion)
+        {
+            ing1.UseIngredient();
+            ing2.UseIngredient();
+            ing3.UseIngredient();
+            EmptyPot();
+        }
+    }
     public void EmptyPot()
     {
         EmptySlot(1);
