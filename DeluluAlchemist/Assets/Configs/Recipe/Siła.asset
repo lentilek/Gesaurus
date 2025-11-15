@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recName: "Si\u0142a"
   descriptions:
-  - "Ugh, nie mam si\u0142y nawet nosi\u0107 w\u0142asnych zakup\xF3w..."
+  - "Ugh, nie mam si\u0142y nawet nosi\u0107 w\u0142asnych zakup\xF3w\u2026"
+  - "Masz co\u015B na z\u0142aman\u0105 r\u0119k\u0119? Albo kruche ko\u015Bci?"
+  - "Heh... Min\u0119\u0142o p\xF3\u0142 roku od ostatniej wizyty na si\u0142owni...
+    Wiesz jak jest..."
   potionColor: {r: 0.17578822, g: 0.81960785, b: 0.08235294, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}

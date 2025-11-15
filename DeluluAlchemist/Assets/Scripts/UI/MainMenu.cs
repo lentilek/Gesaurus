@@ -5,9 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject credits;
+    private void Awake()
+    {
+        credits.SetActive(false);
+    }
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+    }
+    public void OpenCredits()
+    {
+        credits.SetActive(true);
+    }
+    public void CloseCredits()
+    {
+        credits.SetActive(false);
     }
     public void Quit()
     {

@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recName: Sen
   descriptions:
-  - "Nie mog\u0119 spa\u0107, pomo\u017Cesz mi?"
+  - "Nie mog\u0119 spa\u0107 od kilku dni, pomo\u017Cesz mi?"
+  - "Nie potrafi\u0119 ostatnio zmru\u017Cy\u0107 oka. Masz co\u015B dla mnie?"
+  - "Masz co\u015B uspakajaj\u0105cego, \u017Ceby dobrze si\u0119 spa\u0142o?"
   potionColor: {r: 0.6453167, g: 0.25338197, b: 0.735849, a: 1}
   ing:
   - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}
