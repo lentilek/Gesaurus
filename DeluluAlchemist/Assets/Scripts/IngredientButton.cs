@@ -14,7 +14,7 @@ public class IngredientButton : MonoBehaviour
     public void AddIngredient()
     {
         potButton = Pot.Instance.FindEmptySlot(this);
-        active.gameObject.SetActive(false);
+        if (potButton != 0) active.gameObject.SetActive(false);
     }
     public void UndoIngredient()
     {

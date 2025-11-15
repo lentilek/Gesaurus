@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +11,15 @@ public class Pot : MonoBehaviour
 
     public Recipe[] recipes;
 
-    /*[HideInInspector] */public IngredientButton ing1, ing2, ing3;
+    [HideInInspector]public IngredientButton ing1, ing2, ing3;
 
     public Image image1, image2, image3, potionColor;
     [HideInInspector] public bool isTherePotion;
     [SerializeField] private Color regularPotion, weirdPotion;
 
+    [SerializeField] private float potAnimMove, potAnimTime;
+
+    [HideInInspector] public Recipe currentRecipe;
     private void Awake()
     {
         Instance = this;
@@ -82,15 +86,15 @@ public class Pot : MonoBehaviour
     }
     public void UndoIng(int i)
     {
-        if (ing1 != null && i == 1)
+        if (!isTherePotion && ing1 != null && i == 1)
         {
             ing1.UndoIngredient();
         }
-        else if (ing2 != null && i == 2)
+        else if (!isTherePotion && ing2 != null && i == 2)
         {
             ing2.UndoIngredient();
         }
-        if (ing3 != null && i == 3)
+        if (!isTherePotion && ing3 != null && i == 3)
         {
             ing3.UndoIngredient();
         }
@@ -99,6 +103,10 @@ public class Pot : MonoBehaviour
     {
         if (ing1 != null && ing2 != null && ing3 != null)
         {
+            AnimateUpDown(image1.gameObject, potAnimMove, potAnimTime);
+            AnimateUpDown(image2.gameObject, potAnimMove, potAnimTime);
+            AnimateUpDown(image3.gameObject, potAnimMove, potAnimTime);
+
             isTherePotion = true;
             bool goodPotion = false;
             foreach (var rec in recipes)
@@ -106,6 +114,7 @@ public class Pot : MonoBehaviour
                 if (rec.ing.Contains(ing1.ingredient) && rec.ing.Contains(ing2.ingredient) 
                     && rec.ing.Contains(ing3.ingredient))
                 {
+                    currentRecipe = rec;
                     potionColor.color = rec.potionColor;
                     goodPotion = true;
                     break;
@@ -120,5 +129,25 @@ public class Pot : MonoBehaviour
                 potionColor.color = weirdPotion;
             }
         }
+    }
+    private void AnimateUpDown(GameObject go, float move, float time)
+    {
+        go.transform.DOMoveY(go.transform.position.y + move, time);
+    }
+
+    public void EmptyPot()
+    {
+        EmptySlot(1);
+        EmptySlot(2);
+        EmptySlot(3);
+
+        AnimateUpDown(image1.gameObject, -potAnimMove, potAnimTime);
+        AnimateUpDown(image2.gameObject, -potAnimMove, potAnimTime);
+        AnimateUpDown(image3.gameObject, -potAnimMove, potAnimTime);
+
+        currentRecipe = null;
+        potionColor.color = regularPotion;
+
+        isTherePotion = false;
     }
 }
