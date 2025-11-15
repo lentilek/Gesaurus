@@ -13,8 +13,4 @@ MonoBehaviour:
   m_Name: Ryba
   m_EditorClassIdentifier: 
   ingName: Ryba
-  regular: {fileID: 0}
-  regHover: {fileID: 0}
-  gone: {fileID: 0}
-  goneHover: {fileID: 0}
-  pot: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  pot: {fileID: 21300000, guid: df47d1c66e98fe147a913436d46a6300, type: 3}

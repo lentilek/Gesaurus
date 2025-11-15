@@ -30,6 +30,7 @@ public class Pot : MonoBehaviour
         if (ing1 != null)
         {
             image1.sprite = ing1.ingredient.pot;
+            //image1.GetComponent<Button>().spriteState.highlightedSprite = ing1.ingredient.potHover;
         }
         else
         {

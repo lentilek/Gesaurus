@@ -6,5 +6,5 @@ using UnityEngine;
 public class Ingredient : ScriptableObject
 {
     public string ingName;
-    public Sprite pot;
+    public Sprite pot, potHover;
 }
