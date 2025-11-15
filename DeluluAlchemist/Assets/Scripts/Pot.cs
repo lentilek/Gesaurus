@@ -34,11 +34,20 @@ public class Pot : MonoBehaviour
         {
             mixButton.SetActive(true);
             inactiveMixButton.SetActive(false);
+            if (ClientsManager.Instance.GoodRecipes())
+            {
+                Character.Instance.Emotion(1);
+            }
+            else
+            {
+                Character.Instance.Emotion(-1);
+            }
         }
         else
         {
             mixButton.SetActive(false);
             inactiveMixButton.SetActive(true);
+            Character.Instance.Emotion(0);
         }
         if (ing1 != null)
         {

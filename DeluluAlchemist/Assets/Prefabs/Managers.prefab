@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6586445777121847901}
   - component: {fileID: 4384315449513260196}
+  - component: {fileID: 3895502458036209577}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -44,11 +45,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e5ad40a4357924ba00b3d08f691333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dayCounter: {fileID: 0}
+  magicCounter: {fileID: 0}
+  reputationCounter: {fileID: 0}
   earnMagic: 3
+  reputationGain: 1
+  reputationLoose: 3
+  minClients: 7
+  maxClients: 11
   magicBalls: 0
   reputation: 0
-  reputationGain: 0
-  reputationLoose: 0
+  days: 0
+  clientCounter: 0
   allIngredientButtons:
   - {fileID: 0}
   - {fileID: 0}
@@ -59,3 +67,23 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &3895502458036209577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213441740892395930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644786b2936e1e34c9994b5a1de52190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  happyClients: 0
+  unhappyClients: 0
+  ignoredClients: 0
+  endDay: {fileID: 0}
+  daysTXT: {fileID: 0}
+  happyClientsTXT: {fileID: 0}
+  unhappyClientsTXT: {fileID: 0}
+  ignoredClientsTXT: {fileID: 0}

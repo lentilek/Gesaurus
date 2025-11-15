@@ -26,7 +26,7 @@ public class ClientsManager : MonoBehaviour
 
         CreateClient();
     }
-    private void CreateClient()
+    public void CreateClient()
     {
         if (client1.isEmpty)
         {
@@ -54,5 +54,22 @@ public class ClientsManager : MonoBehaviour
         client.gameObject.SetActive(true);
 
         StartCoroutine(WaitForClient());
+    }
+    public void EmptyClients()
+    {
+        client1.isEmpty = true;
+        client1.gameObject.SetActive(false);
+        client2.isEmpty = true;
+        client2.gameObject.SetActive(false);
+        client3.isEmpty = true;
+        client3.gameObject.SetActive(false);
+    }
+    public bool GoodRecipes()
+    {
+        if (client1.IsCorrect() || client2.IsCorrect() || client3.IsCorrect())
+        {
+            return true;
+        }
+        else { return false; }
     }
 }

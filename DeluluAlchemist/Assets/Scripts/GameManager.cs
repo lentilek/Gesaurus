@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] TextMeshProUGUI dayCounter, magicCounter, reputationCounter;
+    public TextMeshProUGUI dayCounter, magicCounter, reputationCounter;
 
-    [SerializeField] private int earnMagic;
-    [HideInInspector] public int magicBalls;
-    [HideInInspector] public int reputation, reputationGain, reputationLoose;
+    [SerializeField] private int earnMagic, reputationGain, reputationLoose, minClients, maxClients;
+    [HideInInspector] public int magicBalls, reputation, days, clientCounter;
 
     public IngredientButton[] allIngredientButtons;
 
@@ -20,13 +20,30 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         reputation = 0;
-        magicBalls = 0;
+        magicBalls = 2;
+        days = 1;
+        ClientNumberRandom();
 
-        dayCounter.text = "1";
+        dayCounter.text = $"Dzieñ: {days}";
         MagicCounter();
         ReputationCounter();
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+        if(clientCounter <= 0)
+        {
+            EndDay.Instance.DayFinalize();
+        }
+        Debug.Log(clientCounter);
+    }
+    public void ClientNumberRandom()
+    {
+        clientCounter = Random.Range(minClients, maxClients);
+    }
     public void EarnBalls()
     {
         magicBalls += earnMagic;
@@ -54,6 +71,6 @@ public class GameManager : MonoBehaviour
     }
     public void ReputationCounter()
     {
-        reputationCounter.text = reputationCounter.ToString();
+        reputationCounter.text = reputation.ToString();
     }
 }

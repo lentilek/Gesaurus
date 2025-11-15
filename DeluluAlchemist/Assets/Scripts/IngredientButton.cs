@@ -25,7 +25,6 @@ public class IngredientButton : MonoBehaviour
         if (replenishing)
         {
             currentTime -= Time.deltaTime;
-            Time.timeScale = 1f;
             GetCurrentFill();
         }
     }

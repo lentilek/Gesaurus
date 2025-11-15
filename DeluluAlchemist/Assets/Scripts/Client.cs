@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System.Linq;
 
 public class Client : MonoBehaviour
 {
@@ -24,7 +25,6 @@ public class Client : MonoBehaviour
         if (!isEmpty)
         {
             currentTime -= Time.deltaTime;
-            Time.timeScale = 1f;
             GetCurrentFill();
         }
     }
@@ -35,15 +35,19 @@ public class Client : MonoBehaviour
             if (Pot.Instance.currentRecipe == recipe)
             {
                 GameManager.Instance.EarnBalls();
+                EndDay.Instance.happyClients++;
             }
             else
             {
                 GameManager.Instance.BadPotion();
+                EndDay.Instance.unhappyClients++;
             }
             Pot.Instance.ing1.UseIngredient();
             Pot.Instance.ing2.UseIngredient();
             Pot.Instance.ing3.UseIngredient();
             Pot.Instance.EmptyPot();
+            EndDay.Instance.ignoredClients++;
+            GameManager.Instance.clientCounter--;
             isEmpty = true;
             gameObject.SetActive(false);
         }
@@ -63,5 +67,15 @@ public class Client : MonoBehaviour
             isEmpty = true;
             gameObject.SetActive(false);
         }
+    }
+    public bool IsCorrect()
+    {
+        if(recipe.ing.Contains(Pot.Instance.ing1.ingredient) && 
+            recipe.ing.Contains(Pot.Instance.ing2.ingredient)
+                    && recipe.ing.Contains(Pot.Instance.ing3.ingredient))
+        {
+            return true;
+        }
+        return false;
     }
 }
