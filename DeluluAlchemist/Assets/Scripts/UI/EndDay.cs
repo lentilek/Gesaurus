@@ -26,9 +26,9 @@ public class EndDay : MonoBehaviour
         Time.timeScale = 0f;
 
         daysTXT.text = $"Dzieñ: {GameManager.Instance.days}";
-        happyClientsTXT.text = $"Zadowoleni klienci: {happyClients}";
-        unhappyClientsTXT.text = $"Niezadowoleni klienci: {unhappyClients}";
-        ignoredClientsTXT.text = $"Nieobs³u¿eni klienci: {ignoredClients}";
+        happyClientsTXT.text = $"Zadowoleni klienci dzisiaj: {happyClients}";
+        unhappyClientsTXT.text = $"Niezadowoleni klienci dzisiaj: {unhappyClients}";
+        ignoredClientsTXT.text = $"Nieobs³u¿eni klienci dzisiaj: {ignoredClients}";
 
         endDay.SetActive(true);
     }
@@ -41,12 +41,19 @@ public class EndDay : MonoBehaviour
         GameManager.Instance.ClientNumberRandom();
 
         ClientsManager.Instance.CreateClient();
+        EndGame.Instance.happyClients += happyClients;
+        EndGame.Instance.unhappyClients += unhappyClients;
+        EndGame.Instance.ignoredClients += ignoredClients;
+        happyClients = 0;
+        unhappyClients = 0;
+        ignoredClients = 0;
 
         endDay.SetActive(false);
         Time.timeScale = 1f;
     }
     public void FinishGame()
     {
-        //
+        endDay.SetActive(false);
+        EndGame.Instance.FinishGame();
     }
 }

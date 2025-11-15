@@ -183,7 +183,7 @@ public class Pot : MonoBehaviour
     }
     public void TrashPotion()
     {
-        if (isTherePotion)
+        if (isTherePotion && currentRecipe != null)
         {
             ing1.UseIngredient();
             ing2.UseIngredient();

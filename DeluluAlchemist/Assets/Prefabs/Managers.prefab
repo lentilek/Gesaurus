@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6586445777121847901}
   - component: {fileID: 4384315449513260196}
   - component: {fileID: 3895502458036209577}
+  - component: {fileID: 2606312984353859014}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -83,6 +84,26 @@ MonoBehaviour:
   unhappyClients: 0
   ignoredClients: 0
   endDay: {fileID: 0}
+  daysTXT: {fileID: 0}
+  happyClientsTXT: {fileID: 0}
+  unhappyClientsTXT: {fileID: 0}
+  ignoredClientsTXT: {fileID: 0}
+--- !u!114 &2606312984353859014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213441740892395930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57140faba59d49489758d5e70e02e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  happyClients: 0
+  unhappyClients: 0
+  ignoredClients: 0
+  endGame: {fileID: 0}
   daysTXT: {fileID: 0}
   happyClientsTXT: {fileID: 0}
   unhappyClientsTXT: {fileID: 0}

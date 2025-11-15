@@ -41,7 +41,7 @@ public class ClientsManager : MonoBehaviour
             NewClient(client3);
         }
 
-        StartCoroutine(WaitForClient());
+        if (GameManager.Instance.clientCounter > 0) StartCoroutine(WaitForClient());
     }
     private void NewClient(Client client)
     {
@@ -52,8 +52,6 @@ public class ClientsManager : MonoBehaviour
         client.currentTime = client.maxTime;
 
         client.gameObject.SetActive(true);
-
-        if (GameManager.Instance.clientCounter > 0) StartCoroutine(WaitForClient());
     }
     public void EmptyClients()
     {

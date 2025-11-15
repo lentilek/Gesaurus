@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
         }
         if(clientCounter <= 0)
         {
-            EndDay.Instance.DayFinalize();
+            if (magicBalls > 0) EndDay.Instance.DayFinalize();
+            else EndGame.Instance.FinishGame();
         }
     }
     public void ClientNumberRandom()
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
     }
     public void ClientLeft()
     {
+        clientCounter--;
         reputation -= reputationLoose;
         ReputationCounter();
     }
