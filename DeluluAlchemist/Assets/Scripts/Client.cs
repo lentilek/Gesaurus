@@ -35,26 +35,18 @@ public class Client : MonoBehaviour
             if (Pot.Instance.currentRecipe == recipe)
             {
                 GameManager.Instance.EarnBalls();
-                foreach (var ingredient in GameManager.Instance.allIngredientButtons)
-                {
-                    if (Pot.Instance.currentRecipe.ing.Contains(ingredient.ingredient))
-                    {
-                        ingredient.UseIngredient();
-                    }
-                }
+                Pot.Instance.ing1.UseIngredient();
+                Pot.Instance.ing2.UseIngredient();
+                Pot.Instance.ing3.UseIngredient();
                 gameObject.SetActive(false);
                 Pot.Instance.EmptyPot();
             }
             else
             {
                 GameManager.Instance.BadPotion();
-                foreach (var ingredient in GameManager.Instance.allIngredientButtons)
-                {
-                    if (Pot.Instance.currentRecipe.ing.Contains(ingredient.ingredient))
-                    {
-                        ingredient.UseIngredient();
-                    }
-                }
+                Pot.Instance.ing1.UseIngredient();
+                Pot.Instance.ing2.UseIngredient();
+                Pot.Instance.ing3.UseIngredient();
                 gameObject.SetActive(false);
                 Pot.Instance.EmptyPot();
             }

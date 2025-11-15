@@ -141,9 +141,9 @@ public class Pot : MonoBehaviour
         EmptySlot(2);
         EmptySlot(3);
 
-        AnimateUpDown(image1.gameObject, -potAnimMove, potAnimTime);
-        AnimateUpDown(image2.gameObject, -potAnimMove, potAnimTime);
-        AnimateUpDown(image3.gameObject, -potAnimMove, potAnimTime);
+        AnimateUpDown(image1.gameObject, -potAnimMove, 0);
+        AnimateUpDown(image2.gameObject, -potAnimMove, 0);
+        AnimateUpDown(image3.gameObject, -potAnimMove, 0);
 
         currentRecipe = null;
         potionColor.color = regularPotion;
