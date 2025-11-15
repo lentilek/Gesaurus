@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d62be724efd96064fb76cdffaaba94a2, type: 3}
-  m_Name: Rumianek
+  m_Name: Czekolada
   m_EditorClassIdentifier: 
-  ingName: Rumianek
-  pot: {fileID: 21300000, guid: 7a07ee0ae59e42d4281c07d6e6b3349c, type: 3}
-  potHover: {fileID: 21300000, guid: 957beda71ca9bef4a8121b79337c15ae, type: 3}
+  ingName: Czekolada
+  pot: {fileID: 21300000, guid: 14cf9891bfff6164fb3416eeb63a8287, type: 3}
+  potHover: {fileID: 21300000, guid: 94446694402d1364ab945d9c24679f88, type: 3}

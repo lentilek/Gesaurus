@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingName: Ryba
   pot: {fileID: 21300000, guid: df47d1c66e98fe147a913436d46a6300, type: 3}
+  potHover: {fileID: 21300000, guid: 77ee7672f936c5942b811d8172ee6809, type: 3}

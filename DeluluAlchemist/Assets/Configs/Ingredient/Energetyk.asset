@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d62be724efd96064fb76cdffaaba94a2, type: 3}
-  m_Name: Rumianek
+  m_Name: Energetyk
   m_EditorClassIdentifier: 
-  ingName: Rumianek
-  pot: {fileID: 21300000, guid: 7a07ee0ae59e42d4281c07d6e6b3349c, type: 3}
-  potHover: {fileID: 21300000, guid: 957beda71ca9bef4a8121b79337c15ae, type: 3}
+  ingName: Energetyk
+  pot: {fileID: 21300000, guid: 2993a75d03b9b7b4ca902056e7867e5d, type: 3}
+  potHover: {fileID: 21300000, guid: 3135a3e325d5c6e478a77736caae29f7, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingName: "\u015Alimak"
   pot: {fileID: 21300000, guid: a97dd102cdaee1d46a339b2e1eb94332, type: 3}
+  potHover: {fileID: 21300000, guid: 4b0d495675c1f374897cbc1f1ff99b34, type: 3}

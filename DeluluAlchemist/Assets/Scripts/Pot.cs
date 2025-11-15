@@ -20,6 +20,7 @@ public class Pot : MonoBehaviour
     [SerializeField] private float potAnimMove, potAnimTime;
 
     [HideInInspector] public Recipe currentRecipe;
+    private SpriteState select = new SpriteState();
     private void Awake()
     {
         Instance = this;
@@ -30,27 +31,35 @@ public class Pot : MonoBehaviour
         if (ing1 != null)
         {
             image1.sprite = ing1.ingredient.pot;
-            //image1.GetComponent<Button>().spriteState.highlightedSprite = ing1.ingredient.potHover;
+            select.highlightedSprite = ing1.ingredient.potHover;
+            image1.gameObject.GetComponent<Button>().spriteState = select;
+            image1.gameObject.SetActive(true);
         }
         else
         {
-            image1.sprite = null;
+            image1.gameObject.SetActive(false);
         }
         if (ing2 != null)
         {
             image2.sprite = ing2.ingredient.pot;
+            select.highlightedSprite = ing2.ingredient.potHover;
+            image2.gameObject.GetComponent<Button>().spriteState = select;
+            image2.gameObject.SetActive(true);
         }
         else
         {
-            image2.sprite = null;
+            image2.gameObject.SetActive(false);    
         }
         if (ing3 != null)
         {
             image3.sprite = ing3.ingredient.pot;
+            select.highlightedSprite = ing3.ingredient.potHover;
+            image3.gameObject.GetComponent<Button>().spriteState = select;
+            image3.gameObject.SetActive(true);
         }
         else
         {
-            image3.sprite = null;
+            image3.gameObject.SetActive(false);
         }
     }
     public int FindEmptySlot(IngredientButton ing)
