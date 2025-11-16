@@ -44,6 +44,8 @@ public class EndGame : MonoBehaviour
 
     public void MainMenu()
     {
+        AudioManager.Instance.PlaySound("click");
+
         SceneManager.LoadScene(0);
     }
 }

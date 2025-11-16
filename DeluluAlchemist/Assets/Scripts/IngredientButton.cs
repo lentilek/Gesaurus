@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
 public class IngredientButton : MonoBehaviour
@@ -29,11 +30,13 @@ public class IngredientButton : MonoBehaviour
     }
     public void AddIngredient()
     {
+        AudioManager.Instance.PlaySound("inPot");
         potButton = Pot.Instance.FindEmptySlot(this);
         if (potButton != 0) active.gameObject.SetActive(false);
     }
     public void UndoIngredient()
     {
+        AudioManager.Instance.PlaySound("outPot");
         Pot.Instance.EmptySlot(potButton);
         potButton = 0;
         active.gameObject.SetActive(true);
@@ -46,6 +49,7 @@ public class IngredientButton : MonoBehaviour
     {
         if (GameManager.Instance.magicBalls > 0)
         {
+            AudioManager.Instance.PlaySound("replenish");
             replenishing = true;
             currentTime = 0;
             inactive.gameObject.SetActive(false);

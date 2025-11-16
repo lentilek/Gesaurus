@@ -34,6 +34,8 @@ public class EndDay : MonoBehaviour
     }
     public void NewDay()
     {
+        AudioManager.Instance.PlaySound("click");
+
         GameManager.Instance.days++;
         GameManager.Instance.dayCounter.text = $"Dzieñ: {GameManager.Instance.days}";
 
@@ -53,6 +55,8 @@ public class EndDay : MonoBehaviour
     }
     public void FinishGame()
     {
+        AudioManager.Instance.PlaySound("click");
+
         endDay.SetActive(false);
         EndGame.Instance.FinishGame();
     }

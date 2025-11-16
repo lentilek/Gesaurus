@@ -30,15 +30,17 @@ public class Client : MonoBehaviour
     }
     public void GivePotion()
     {
-        if (Pot.Instance.isTherePotion && Pot.Instance.currentTime <= 0)
+        if (Pot.Instance.isTherePotion && Pot.Instance.progressFill.fillAmount >= 1)
         {
             if (Pot.Instance.currentRecipe == recipe)
             {
+                AudioManager.Instance.PlaySound("clientGood");
                 GameManager.Instance.EarnBalls();
                 EndDay.Instance.happyClients++;
             }
             else
             {
+                AudioManager.Instance.PlaySound("clientBad");
                 GameManager.Instance.BadPotion();
                 EndDay.Instance.unhappyClients++;
             }
@@ -53,6 +55,7 @@ public class Client : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.PlaySound("clientNothing");
             currentTime -= patienceNoPotion;
         }
     }

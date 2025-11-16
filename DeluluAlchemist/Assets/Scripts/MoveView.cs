@@ -9,10 +9,12 @@ public class MoveView : MonoBehaviour
     [SerializeField] private float movement, time;
     public void MoveToPotion()
     {
+        AudioManager.Instance.PlaySound("view");
         screen.transform.DOMoveX(movement, time);
     }
     public void MoveToClient()
     {
+        AudioManager.Instance.PlaySound("view");
         screen.transform.DOMoveX(0, time);
     }
 }

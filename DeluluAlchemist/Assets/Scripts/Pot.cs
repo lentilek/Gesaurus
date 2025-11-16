@@ -143,7 +143,7 @@ public class Pot : MonoBehaviour
     }
     private IEnumerator Mix()
     {
-        if (ing1 != null && ing2 != null && ing3 != null)
+        if (ing1 != null && ing2 != null && ing3 != null && !isTherePotion)
         {
             AnimateUpDown(image1.gameObject, potAnimMove, potAnimTime);
             AnimateUpDown(image2.gameObject, potAnimMove, potAnimTime);
@@ -152,6 +152,7 @@ public class Pot : MonoBehaviour
             isTherePotion = true;
             bool goodPotion = false;
 
+            AudioManager.Instance.PlaySound("mix");
             currentTime = 0;
             progressBar.SetActive(true);
             yield return new WaitForSecondsRealtime(progressTime);
@@ -183,8 +184,9 @@ public class Pot : MonoBehaviour
     }
     public void TrashPotion()
     {
-        if (isTherePotion && currentRecipe != null)
+        if (isTherePotion && progressFill.fillAmount >= 1)
         {
+            AudioManager.Instance.PlaySound("trash");
             ing1.UseIngredient();
             ing2.UseIngredient();
             ing3.UseIngredient();
