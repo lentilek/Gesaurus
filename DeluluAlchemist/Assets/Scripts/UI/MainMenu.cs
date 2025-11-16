@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     public void Tutorial()
     {
         AudioManager.Instance.PlaySound("click");
+        SceneManager.LoadScene(2);
     }
     public void OpenCredits()
     {
