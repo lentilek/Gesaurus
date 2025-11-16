@@ -209,7 +209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -246}
+  m_AnchoredPosition: {x: -150, y: -271.00003}
   m_SizeDelta: {x: 236, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7485226157456449751
@@ -326,7 +326,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nieobs\u0142u\u017Ceni klienci: "
+  m_text: "Nieobs\u0142u\u017Ceni klienci dzisiaj 10"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e, type: 2}
   m_sharedMaterial: {fileID: 2290676866350395572, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e,
@@ -857,7 +857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.999992, y: 2}
+  m_AnchoredPosition: {x: 20.999992, y: 11}
   m_SizeDelta: {x: 560, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4680745900166572638
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Niezadowleni klienci:'
+  m_text: 'Niezadowleni klienci dzisiaj: 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e, type: 2}
   m_sharedMaterial: {fileID: 2290676866350395572, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e,
@@ -995,7 +995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: -245.99998}
+  m_AnchoredPosition: {x: 150, y: -271}
   m_SizeDelta: {x: 236, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7729595125158790418
@@ -1112,7 +1112,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+          m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
           m_MethodName: Hover
           m_Mode: 1
           m_Arguments:
@@ -1232,8 +1232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.999992, y: 103}
-  m_SizeDelta: {x: 560, y: 60}
+  m_AnchoredPosition: {x: -14.353, y: 126}
+  m_SizeDelta: {x: 489.293, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1028864463178657748
 CanvasRenderer:
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Zadowleni klienci:'
+  m_text: 'Zadowleni klienci dzisiaj: 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e, type: 2}
   m_sharedMaterial: {fileID: 2290676866350395572, guid: 490ed0f3ec83e3f4184e9ddeb8ad4b6e,

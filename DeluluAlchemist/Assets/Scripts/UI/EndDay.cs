@@ -25,6 +25,7 @@ public class EndDay : MonoBehaviour
     {
         Time.timeScale = 0f;
 
+        ClientsManager.Instance.StopClients();
         daysTXT.text = $"Dzieñ: {GameManager.Instance.days}";
         happyClientsTXT.text = $"Zadowoleni klienci dzisiaj: {happyClients}";
         unhappyClientsTXT.text = $"Niezadowoleni klienci dzisiaj: {unhappyClients}";
@@ -38,6 +39,7 @@ public class EndDay : MonoBehaviour
 
         GameManager.Instance.days++;
         GameManager.Instance.dayCounter.text = $"Dzieñ: {GameManager.Instance.days}";
+        if (GameManager.Instance.days > GameManager.Instance.easyDays) GameManager.Instance.easyModeOn = false;
 
         ClientsManager.Instance.EmptyClients();
         GameManager.Instance.ClientNumberRandom();

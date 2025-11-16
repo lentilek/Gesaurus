@@ -54,10 +54,12 @@ MonoBehaviour:
   reputationLoose: 3
   minClients: 7
   maxClients: 11
+  easyDays: 3
   magicBalls: 0
   reputation: 0
   days: 0
   clientCounter: 0
+  easyModeOn: 0
   allIngredientButtons:
   - {fileID: 0}
   - {fileID: 0}

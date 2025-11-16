@@ -1408,16 +1408,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 270142309895651699}
-    - target: {fileID: 3121080636360882021, guid: d11bcad6dfa9d4344a5e0feb508ac03d,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hover
-      objectReference: {fileID: 0}
-    - target: {fileID: 3121080636360882021, guid: d11bcad6dfa9d4344a5e0feb508ac03d,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndGame, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 4308296377875999230, guid: d11bcad6dfa9d4344a5e0feb508ac03d,
         type: 3}
       propertyPath: m_Name
@@ -1458,16 +1448,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 270142309895651699}
-    - target: {fileID: 49919185364464377, guid: 1a8b4125e41edf44ea00fe7c4f322936,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hover
-      objectReference: {fileID: 0}
-    - target: {fileID: 49919185364464377, guid: 1a8b4125e41edf44ea00fe7c4f322936,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndGame, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 892379849844989173, guid: 1a8b4125e41edf44ea00fe7c4f322936,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1478,16 +1458,6 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 270142309895651699}
-    - target: {fileID: 955102904179040927, guid: 1a8b4125e41edf44ea00fe7c4f322936,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Hover
-      objectReference: {fileID: 0}
-    - target: {fileID: 955102904179040927, guid: 1a8b4125e41edf44ea00fe7c4f322936,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndGame, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 1876590588857616978, guid: 1a8b4125e41edf44ea00fe7c4f322936,
         type: 3}
       propertyPath: m_Name

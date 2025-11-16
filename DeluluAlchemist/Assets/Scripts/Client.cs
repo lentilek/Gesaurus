@@ -11,7 +11,7 @@ public class Client : MonoBehaviour
     public Image portraite;
     public TextMeshProUGUI text;
     [SerializeField] private Image patienceFill;
-    public float maxTime, currentTime, patienceNoPotion;
+    public float maxTime1, maxTime2, currentTime, patienceNoPotion;
     [HideInInspector] public Recipe recipe;
     [HideInInspector] public bool isEmpty;
     [SerializeField] private Sprite giveNormal, hoverNormal, giveGood, hoverGood;
@@ -71,8 +71,16 @@ public class Client : MonoBehaviour
     }
     private void GetCurrentFill()
     {
-        float fill = currentTime / maxTime;
-        patienceFill.fillAmount = fill;
+        if (GameManager.Instance.easyModeOn)
+        {
+            float fill = currentTime / maxTime1;
+            patienceFill.fillAmount = fill;
+        }
+        else
+        {
+            float fill = currentTime / maxTime2;
+            patienceFill.fillAmount = fill;
+        }
 
         if (patienceFill.fillAmount <= 0)
         {

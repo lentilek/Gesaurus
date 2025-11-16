@@ -11,13 +11,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI dayCounter, magicCounter, reputationCounter;
 
     [SerializeField] private int earnMagic, reputationGain, reputationLoose, minClients, maxClients;
+    public int easyDays;
     [HideInInspector] public int magicBalls, reputation, days, clientCounter;
+    [HideInInspector] public bool easyModeOn;
 
     public IngredientButton[] allIngredientButtons;
 
     private void Awake()
     {
         Instance = this;
+        easyModeOn = true;
 
         reputation = 0;
         magicBalls = 2;

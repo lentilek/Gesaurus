@@ -8,7 +8,7 @@ public class ClientsManager : MonoBehaviour
 
     [SerializeField] private Client client1, client2, client3;
 
-    [SerializeField] private float minTime, maxTime;
+    [SerializeField] private float minTime1, maxTime1, minTime2, maxTime2;
 
     [SerializeField] private Sprite[] portraitesAll;
     [HideInInspector] public List<Sprite> portraitesToChoose = new List<Sprite>();
@@ -27,7 +27,16 @@ public class ClientsManager : MonoBehaviour
     }
     private IEnumerator WaitForClient()
     {
-        yield return new WaitForSeconds(Random.Range(minTime,maxTime));
+        if (GameManager.Instance.easyModeOn)
+        {
+            float time = Random.Range(minTime1, maxTime1);
+            yield return new WaitForSeconds(time);
+        }
+        else
+        {
+            float time = Random.Range(minTime2, maxTime2);
+            yield return new WaitForSeconds(time);
+        }
 
         CreateClient();
     }
@@ -56,9 +65,10 @@ public class ClientsManager : MonoBehaviour
         client.recipe = Pot.Instance.recipes[Random.Range(0, Pot.Instance.recipes.Length)];
         client.text.text = client.recipe.descriptions[Random.Range(0, client.recipe.descriptions.Length)];
         client.isEmpty = false;
-        client.currentTime = client.maxTime;
+        if (GameManager.Instance.easyModeOn) client.currentTime = client.maxTime1;
+        else client.currentTime = client.maxTime2;
 
-        client.gameObject.SetActive(true);
+            client.gameObject.SetActive(true);
     }
     public void EmptyClients()
     {
@@ -76,5 +86,9 @@ public class ClientsManager : MonoBehaviour
             return true;
         }
         else { return false; }
+    }
+    public void StopClients()
+    {
+        StopAllCoroutines();
     }
 }

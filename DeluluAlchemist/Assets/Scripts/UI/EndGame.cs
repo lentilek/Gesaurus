@@ -11,23 +11,25 @@ public class EndGame : MonoBehaviour
     [HideInInspector] public int happyClients, unhappyClients, ignoredClients;
     [SerializeField] private GameObject endGame;
     [SerializeField] private TextMeshProUGUI daysTXT, happyClientsTXT, unhappyClientsTXT, ignoredClientsTXT;
-
+    private bool done;
     private void Awake()
     {
         Instance = this;
         happyClients = 0;
         unhappyClients = 0;
         ignoredClients = 0;
+        done = false;
     }
     private void Update()
     {
-        if (GameManager.Instance.reputation <= -10)
+        if (GameManager.Instance.reputation <= -10 && !done)
         {
             FinishGame();
         }
     }
     public void FinishGame()
     {
+        done = true;
         Time.timeScale = 0f;
 
         happyClients += EndDay.Instance.happyClients;
