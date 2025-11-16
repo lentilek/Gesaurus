@@ -54,6 +54,7 @@ public class Client : MonoBehaviour
                 GameManager.Instance.BadPotion();
                 EndDay.Instance.unhappyClients++;
             }
+            ClientsManager.Instance.portraitesToChoose.Add(portraite.sprite);
             Pot.Instance.ing1.UseIngredient();
             Pot.Instance.ing2.UseIngredient();
             Pot.Instance.ing3.UseIngredient();
@@ -75,6 +76,7 @@ public class Client : MonoBehaviour
 
         if (patienceFill.fillAmount <= 0)
         {
+            ClientsManager.Instance.portraitesToChoose.Add(portraite.sprite);
             GameManager.Instance.ClientLeft();
             isEmpty = true;
             gameObject.SetActive(false);

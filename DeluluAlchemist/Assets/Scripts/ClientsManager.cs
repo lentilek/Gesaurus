@@ -10,7 +10,8 @@ public class ClientsManager : MonoBehaviour
 
     [SerializeField] private float minTime, maxTime;
 
-    [SerializeField] private Sprite[] portraites;
+    [SerializeField] private Sprite[] portraitesAll;
+    [HideInInspector] public List<Sprite> portraitesToChoose = new List<Sprite>();
 
     private void Awake()
     {
@@ -18,6 +19,10 @@ public class ClientsManager : MonoBehaviour
     }
     private void Start()
     {
+        foreach (var portrate in portraitesAll)
+        {
+            portraitesToChoose.Add(portrate);
+        }
         CreateClient();
     }
     private IEnumerator WaitForClient()
@@ -45,7 +50,9 @@ public class ClientsManager : MonoBehaviour
     }
     private void NewClient(Client client)
     {
-        client.portraite.sprite = portraites[Random.Range(0, portraites.Length)];
+        int a = Random.Range(0, portraitesToChoose.Count);
+        client.portraite.sprite = portraitesToChoose[a];
+        portraitesToChoose.Remove(portraitesToChoose[a]);
         client.recipe = Pot.Instance.recipes[Random.Range(0, Pot.Instance.recipes.Length)];
         client.text.text = client.recipe.descriptions[Random.Range(0, client.recipe.descriptions.Length)];
         client.isEmpty = false;

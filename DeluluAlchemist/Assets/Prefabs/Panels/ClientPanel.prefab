@@ -209,11 +209,12 @@ MonoBehaviour:
   client3: {fileID: 2682146657043174377}
   minTime: 20
   maxTime: 30
-  portraites:
+  portraitesAll:
   - {fileID: 21300000, guid: 8181c7bc97efa0a45836614087bfb5e9, type: 3}
   - {fileID: 21300000, guid: 62f7d028fc5b5524084ef8488506ce65, type: 3}
   - {fileID: 21300000, guid: 1e123ea0d4ba31b46b41b774e02de924, type: 3}
   - {fileID: 21300000, guid: bde45db697c405d42b171db6165afd6d, type: 3}
+  portraitesToChoose: []
 --- !u!1 &5511745282236282944
 GameObject:
   m_ObjectHideFlags: 0
