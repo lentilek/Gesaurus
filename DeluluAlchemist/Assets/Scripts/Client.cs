@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Client : MonoBehaviour
@@ -24,7 +25,7 @@ public class Client : MonoBehaviour
     }
     private void Update()
     {
-        if (!isEmpty)
+        if (!isEmpty && SceneManager.GetActiveScene().buildIndex != 2)
         {
             currentTime -= Time.deltaTime;
             GetCurrentFill();

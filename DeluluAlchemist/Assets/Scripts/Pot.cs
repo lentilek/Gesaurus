@@ -22,7 +22,8 @@ public class Pot : MonoBehaviour
 
     [HideInInspector] public Recipe currentRecipe;
     private SpriteState select = new SpriteState();
-    [SerializeField] private GameObject mixButton, inactiveMixButton, progressBar;
+    [SerializeField] private GameObject mixButton, inactiveMixButton;
+    public GameObject progressBar;
     private void Awake()
     {
         Instance = this;
@@ -149,12 +150,13 @@ public class Pot : MonoBehaviour
             AnimateUpDown(image2.gameObject, potAnimMove, potAnimTime);
             AnimateUpDown(image3.gameObject, potAnimMove, potAnimTime);
 
+            currentTime = 0;
+            progressBar.SetActive(true);
+
             isTherePotion = true;
             bool goodPotion = false;
 
             AudioManager.Instance.PlaySound("mix");
-            currentTime = 0;
-            progressBar.SetActive(true);
             yield return new WaitForSecondsRealtime(progressTime);
             foreach (var rec in recipes)
             {

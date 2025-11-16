@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClientsManager : MonoBehaviour
 {
     public static ClientsManager Instance;
 
-    [SerializeField] private Client client1, client2, client3;
+    [SerializeField] public Client client1, client2, client3;
 
     [SerializeField] private float minTime1, maxTime1, minTime2, maxTime2;
 
@@ -19,11 +20,18 @@ public class ClientsManager : MonoBehaviour
     }
     private void Start()
     {
+        if (SceneManager.GetActiveScene().buildIndex != 2)
+        {
+            PreparePortraites();
+            CreateClient();
+        }
+    }
+    public void PreparePortraites()
+    {
         foreach (var portrate in portraitesAll)
         {
             portraitesToChoose.Add(portrate);
         }
-        CreateClient();
     }
     private IEnumerator WaitForClient()
     {
@@ -68,7 +76,7 @@ public class ClientsManager : MonoBehaviour
         if (GameManager.Instance.easyModeOn) client.currentTime = client.maxTime1;
         else client.currentTime = client.maxTime2;
 
-            client.gameObject.SetActive(true);
+        client.gameObject.SetActive(true);
     }
     public void EmptyClients()
     {
