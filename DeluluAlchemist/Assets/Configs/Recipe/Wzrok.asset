@@ -18,7 +18,7 @@ MonoBehaviour:
     Mo\u017Cesz mi pom\xF3c?"
   - "Masz jakie\u015B dobre oczy na wymian\u0119? Albo co\u015B na lepszy wzrok?"
   - "Bol\u0105 mnie oczy. Za\u0142atw mi co\u015B."
-  potionColor: {r: 0.8207547, g: 0.39675674, b: 0.081301175, a: 1}
+  potionColor: {r: 0.7735849, g: 0.45244312, b: 0.21456033, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
   - {fileID: 11400000, guid: b6b9e690dec43b145a268b86f21aef12, type: 2}

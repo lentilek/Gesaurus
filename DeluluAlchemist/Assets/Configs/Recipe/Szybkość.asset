@@ -17,7 +17,7 @@ MonoBehaviour:
   - "Wszystko robi\u0119 strasznie wolno, jeste\u015B w stanie co\u015B na to poradzi\u0107?"
   - "Ostatnio czuj\u0119 si\u0119 jak \u015Blimak... Mo\u017Cesz co\u015B z tym zrobi\u0107?"
   - "Potrzebuj\u0119 energii... Nie mam na nic si\u0142y... Ugh..."
-  potionColor: {r: 0.728924, g: 0.08235294, b: 0.81960785, a: 1}
+  potionColor: {r: 0.9019608, g: 0.7598885, b: 0.41960788, a: 1}
   ing:
   - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
   - {fileID: 11400000, guid: 3da49811fcd7a6b4cb95f961355855b0, type: 2}
