@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
     }
     public void ClientLeft()
     {
+        EndDay.Instance.ignoredClients++;
         clientCounter--;
         reputation -= reputationLoose;
         ReputationCounter();

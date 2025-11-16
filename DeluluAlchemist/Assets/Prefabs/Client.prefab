@@ -136,6 +136,11 @@ MonoBehaviour:
   patienceNoPotion: 5
   recipe: {fileID: 0}
   isEmpty: 0
+  giveNormal: {fileID: -935200873, guid: fd1e341fc399e3546ba66efe9c88e29b, type: 3}
+  hoverNormal: {fileID: 1971843562, guid: fd1e341fc399e3546ba66efe9c88e29b, type: 3}
+  giveGood: {fileID: 175295029, guid: fd1e341fc399e3546ba66efe9c88e29b, type: 3}
+  hoverGood: {fileID: -1166691723, guid: fd1e341fc399e3546ba66efe9c88e29b, type: 3}
+  giveButton: {fileID: 2450332773501404316}
 --- !u!1 &3249618210472350066
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,8 +401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: 33}
+  m_SizeDelta: {x: -32, y: -66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1985232090791671063
 CanvasRenderer:

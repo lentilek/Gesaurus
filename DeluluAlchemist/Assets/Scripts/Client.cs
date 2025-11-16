@@ -14,6 +14,8 @@ public class Client : MonoBehaviour
     public float maxTime, currentTime, patienceNoPotion;
     [HideInInspector] public Recipe recipe;
     [HideInInspector] public bool isEmpty;
+    [SerializeField] private Sprite giveNormal, hoverNormal, giveGood, hoverGood;
+    [SerializeField] private Button giveButton;
 
     private void Awake()
     {
@@ -26,6 +28,14 @@ public class Client : MonoBehaviour
         {
             currentTime -= Time.deltaTime;
             GetCurrentFill();
+        }
+        if (Pot.Instance.isTherePotion && recipe == Pot.Instance.currentRecipe)
+        {
+            GiveButton(false);
+        }
+        else
+        {
+            GiveButton(true);
         }
     }
     public void GivePotion()
@@ -48,7 +58,6 @@ public class Client : MonoBehaviour
             Pot.Instance.ing2.UseIngredient();
             Pot.Instance.ing3.UseIngredient();
             Pot.Instance.EmptyPot();
-            EndDay.Instance.ignoredClients++;
             GameManager.Instance.clientCounter--;
             isEmpty = true;
             gameObject.SetActive(false);
@@ -80,5 +89,21 @@ public class Client : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public void GiveButton(bool normal)
+    {
+        SpriteState select = new SpriteState();
+        if (normal)
+        {
+            select.highlightedSprite = hoverNormal;
+            giveButton.gameObject.GetComponent<Image>().sprite = giveNormal;
+            giveButton.gameObject.GetComponent<Button>().spriteState = select;
+        }
+        else
+        {
+            select.highlightedSprite = hoverGood;
+            giveButton.gameObject.GetComponent<Image>().sprite = giveGood;
+            giveButton.gameObject.GetComponent<Button>().spriteState = select;
+        }
     }
 }
