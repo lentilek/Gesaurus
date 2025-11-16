@@ -23,7 +23,7 @@ public class IngredientButton : MonoBehaviour
     {
         if (replenishing)
         {
-            currentTime -= Time.deltaTime;
+            currentTime += Time.deltaTime;
             GetCurrentFill();
         }
     }
@@ -47,7 +47,7 @@ public class IngredientButton : MonoBehaviour
         if (GameManager.Instance.magicBalls > 0)
         {
             replenishing = true;
-            currentTime = replenishTime;
+            currentTime = 0;
             inactive.gameObject.SetActive(false);
             GameManager.Instance.magicBalls--;
             GameManager.Instance.MagicCounter();
@@ -59,7 +59,7 @@ public class IngredientButton : MonoBehaviour
         float fill = currentTime / replenishTime;
         replenishFill.fillAmount = fill;
 
-        if (replenishFill.fillAmount <= 0)
+        if (replenishFill.fillAmount >= 1)
         {
             replenishCounter.SetActive(false);
             replenishing = false;

@@ -34,7 +34,7 @@ public class Pot : MonoBehaviour
     {
         if (isTherePotion)
         {
-            currentTime -= Time.deltaTime;
+            currentTime += Time.deltaTime;
             GetCurrentFill();
         }
         if (ing1 != null && ing2 != null && ing3 != null)
@@ -152,7 +152,7 @@ public class Pot : MonoBehaviour
             isTherePotion = true;
             bool goodPotion = false;
 
-            currentTime = progressTime;
+            currentTime = 0;
             progressBar.SetActive(true);
             yield return new WaitForSecondsRealtime(progressTime);
             foreach (var rec in recipes)
