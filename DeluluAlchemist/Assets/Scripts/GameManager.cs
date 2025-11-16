@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI dayCounter, magicCounter, reputationCounter;
 
-    [SerializeField] private int earnMagic, reputationGain, reputationLoose, minClients, maxClients;
+    [SerializeField] private int earnMagic, reputationGain, reputationLooseNoP, reputationLooseBadP, minClients, maxClients;
     public int easyDays;
     [HideInInspector] public int magicBalls, reputation, days, clientCounter;
     [HideInInspector] public bool easyModeOn;
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     public void BadPotion()
     {
         magicBalls += earnMagic;
-        reputation -= reputationLoose;
+        reputation -= reputationLooseBadP;
 
         MagicCounter();
         ReputationCounter();
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     {
         EndDay.Instance.ignoredClients++;
         clientCounter--;
-        reputation -= reputationLoose;
+        reputation -= reputationLooseNoP;
         ReputationCounter();
     }
     public void MagicCounter()

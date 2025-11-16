@@ -51,7 +51,8 @@ MonoBehaviour:
   reputationCounter: {fileID: 0}
   earnMagic: 3
   reputationGain: 1
-  reputationLoose: 3
+  reputationLooseNoP: 3
+  reputationLooseBadP: 1
   minClients: 7
   maxClients: 11
   easyDays: 3
