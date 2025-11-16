@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] parts;
     private int part;
-    [SerializeField] private GameObject moveView1, moveView2, ryba, pokrzywa, clientGive;
+    [SerializeField] private GameObject moveView1, moveView2, ryba, pokrzywa, clientGive, trash;
     private void Awake()
     {
         foreach (var part in parts) { part.gameObject.SetActive(false); }
@@ -28,13 +29,19 @@ public class TutorialManager : MonoBehaviour
         {
             Part2();
         }
-        else if(part == 5 && Pot.Instance.isTherePotion && !Pot.Instance.progressBar.activeSelf)
+        else if (part == 3 && Pot.Instance.isTherePotion && !Pot.Instance.progressBar.activeSelf)
+        {
+            trash.GetComponent<Button>().enabled = true;
+        }
+        else if (part == 5 && Pot.Instance.isTherePotion && !Pot.Instance.progressBar.activeSelf)
         {
             Part5();
         }
     }
     public void Part0()
     {
+        AudioManager.Instance.PlaySound("click");
+
         SpawnClient();
         parts[part].gameObject.SetActive(false);
         part++;
@@ -54,8 +61,6 @@ public class TutorialManager : MonoBehaviour
     }
     public void Part1()
     {
-        AudioManager.Instance.PlaySound("click");
-
         parts[part].gameObject.SetActive(false);
         part++;
         parts[part].gameObject.SetActive(true); 
@@ -76,6 +81,8 @@ public class TutorialManager : MonoBehaviour
     } 
     public void Part4()
     {
+        AudioManager.Instance.PlaySound("click");
+
         parts[part].gameObject.SetActive(false);
         part++;
         parts[part].gameObject.SetActive(true);
