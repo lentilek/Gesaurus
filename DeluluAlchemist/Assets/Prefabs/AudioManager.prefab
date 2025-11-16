@@ -68,11 +68,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b35ee851265910641ad79144e253b8e7, type: 3}
   - {fileID: 8300000, guid: 180078f3a8da2f646b19268918590683, type: 3}
   click:
-  - {fileID: 8300000, guid: 7ffaf12ada015e547877639406c674c2, type: 3}
-  - {fileID: 8300000, guid: 26566f63e7713084682042c6b75fb5ad, type: 3}
   - {fileID: 8300000, guid: c91d22511da13c647bbed1088819a819, type: 3}
   hover:
-  - {fileID: 8300000, guid: aff698b6cabd1f0438d61ceaa2b74b6f, type: 3}
+  - {fileID: 8300000, guid: 7ffaf12ada015e547877639406c674c2, type: 3}
 --- !u!82 &3401855451805524699
 AudioSource:
   m_ObjectHideFlags: 0

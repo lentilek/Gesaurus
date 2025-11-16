@@ -52,10 +52,10 @@ public class AudioManager : MonoBehaviour
                 audioSource.PlayOneShot(view[Random.Range(0, view.Length)]);
                 break;
             case "click":
-                audioSource.PlayOneShot(click[Random.Range(0, click.Length)]);
+                audioSource.PlayOneShot(click[Random.Range(0, click.Length)], .75f);
                 break;
             case "hover":
-                audioSource.PlayOneShot(hover[Random.Range(0, hover.Length)]);
+                audioSource.PlayOneShot(hover[Random.Range(0, hover.Length)], .15f);
                 break;
             default: break;
         }

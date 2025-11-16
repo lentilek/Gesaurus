@@ -48,4 +48,8 @@ public class EndGame : MonoBehaviour
 
         SceneManager.LoadScene(0);
     }
+    public void Hover()
+    {
+        AudioManager.Instance.PlaySound("hover");
+    }
 }
