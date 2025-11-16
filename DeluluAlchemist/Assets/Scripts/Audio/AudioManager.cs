@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
         switch (clip)
         {
             case "trash":
-                audioSource.PlayOneShot(trash[Random.Range(0, trash.Length)], .15f); 
+                audioSource.PlayOneShot(trash[Random.Range(0, trash.Length)], .22f); 
                 break;
             case "mix":
                 audioSource.PlayOneShot(mix[Random.Range(0, mix.Length)]);
