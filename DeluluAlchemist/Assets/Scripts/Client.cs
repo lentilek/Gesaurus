@@ -17,6 +17,7 @@ public class Client : MonoBehaviour
     [HideInInspector] public bool isEmpty;
     [SerializeField] private Sprite giveNormal, hoverNormal, giveGood, hoverGood;
     [SerializeField] private Button giveButton;
+    [HideInInspector] public int descriptIndex, recipeIndex;
 
     private void Awake()
     {
@@ -37,6 +38,14 @@ public class Client : MonoBehaviour
         else
         {
             GiveButton(true);
+        }
+    }
+    public void ReloadRecipe()
+    {
+        if (recipe != null)
+        {
+            recipe = Pot.Instance.recipes[recipeIndex];
+            text.text = recipe.descriptions[descriptIndex];
         }
     }
     public void GivePotion()

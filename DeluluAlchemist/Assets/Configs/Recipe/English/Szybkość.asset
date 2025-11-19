@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
+  m_Name: "Szybko\u015B\u0107"
+  m_EditorClassIdentifier: 
+  recName: Speed
+  descriptions:
+  - I'm soooo slooow... Do something about that.
+  - Sometimes I feel like a snail. Not in a good way. Could you help?
+  - I need energy... So tired... So slow...
+  potionColor: {r: 0.9019608, g: 0.7598885, b: 0.41960788, a: 1}
+  ing:
+  - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
+  - {fileID: 11400000, guid: 3da49811fcd7a6b4cb95f961355855b0, type: 2}
+  - {fileID: 11400000, guid: 135e6117a90e5434190eeb95c40d2229, type: 2}

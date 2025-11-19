@@ -50,6 +50,10 @@ public class Settings : MonoBehaviour
         AudioManager.Instance.PlaySound("click");
         Time.timeScale = 1f;
 
+        if (Pot.Instance != null)
+        {
+            Pot.Instance.ChangeLanguage();
+        }
         settingsUI.SetActive(false);
     }
     private void SetUp()
@@ -82,6 +86,10 @@ public class Settings : MonoBehaviour
     static void SetLanguage(int languageIndex)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[languageIndex];
+        /*if (Pot.Instance != null)
+        {
+            Pot.Instance.ChangeLanguage();
+        }*/
     }
     public void SFXVolume()
     {

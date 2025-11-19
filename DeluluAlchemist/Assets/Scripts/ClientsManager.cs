@@ -70,8 +70,13 @@ public class ClientsManager : MonoBehaviour
         int a = Random.Range(0, portraitesToChoose.Count);
         client.portraite.sprite = portraitesToChoose[a];
         portraitesToChoose.Remove(portraitesToChoose[a]);
-        client.recipe = Pot.Instance.recipes[Random.Range(0, Pot.Instance.recipes.Length)];
-        client.text.text = client.recipe.descriptions[Random.Range(0, client.recipe.descriptions.Length)];
+
+        client.recipeIndex = Random.Range(0, Pot.Instance.recipes.Length);
+        client.recipe = Pot.Instance.recipes[client.recipeIndex];
+
+        client.descriptIndex = Random.Range(0, client.recipe.descriptions.Length);
+        client.text.text = client.recipe.descriptions[client.descriptIndex];
+
         client.isEmpty = false;
         if (GameManager.Instance.easyModeOn) client.currentTime = client.maxTime1;
         else client.currentTime = client.maxTime2;

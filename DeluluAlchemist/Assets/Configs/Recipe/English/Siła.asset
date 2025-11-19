@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
+  m_Name: "Si\u0142a"
+  m_EditorClassIdentifier: 
+  recName: Strength
+  descriptions:
+  - Ugh, I don't have strength to do anything...
+  - Soo... Got something to strengthen bones?
+  - It's been six months since my last gym visit. You know what I need.
+  potionColor: {r: 0.645283, g: 0.30559623, b: 0.40784442, a: 1}
+  ing:
+  - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
+  - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}
+  - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}

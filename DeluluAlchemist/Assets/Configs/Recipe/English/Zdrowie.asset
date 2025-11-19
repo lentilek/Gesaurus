@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
   m_Name: Zdrowie
   m_EditorClassIdentifier: 
-  recName: Zdrowie
+  recName: Health
   descriptions:
-  - "O nie, chyba \u0142apie mnie przezi\u0119bienie... Masz co\u015B na wzmocnienie
-    organizmu?"
-  - "Yhh... Za\u0142atwisz mi jaki\u015B bardzo zdrowy specifik? Taki z witaminami
-    i w og\xF3le?"
-  - "Moje noworoczne postanowienie to dba\u0107 o zdrowie. Masz co\u015B dla mnie?"
+  - Oh no, I think I'm catching a cold... Do you have anything to strengthen the
+    body?
+  - Uhh... Can you get me some really healthy stuff? One with vitamins and all?
+  - My New Year's resolution is to take care of my health. Do you have anything for
+    me?
   potionColor: {r: 0.7207546, g: 0.1999074, b: 0.4431823, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}

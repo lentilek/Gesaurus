@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
+  m_Name: Wzrok
+  m_EditorClassIdentifier: 
+  recName: Sight
+  descriptions:
+  - My glasses don't work as well as they used to... Can you help me?
+  - Do you have any good eyes to trade? Or something to improve my eyesight?
+  - My eyes hurt. Get me something.
+  potionColor: {r: 0.7735849, g: 0.45244312, b: 0.21456033, a: 1}
+  ing:
+  - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
+  - {fileID: 11400000, guid: b6b9e690dec43b145a268b86f21aef12, type: 2}
+  - {fileID: 11400000, guid: fcec8d04631f4bc4c94072a392188908, type: 2}

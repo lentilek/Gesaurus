@@ -1,15 +1,23 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class Pot : MonoBehaviour
 {
     public static Pot Instance;
 
+    [Serializable]
+    public class LocalizedRecipe : LocalizedAsset<Recipe> { };
+
+    public LocalizedRecipe[] recipesLocals;
     public Recipe[] recipes;
+    private int index;
 
     [HideInInspector]public IngredientButton ing1, ing2, ing3;
 
@@ -30,9 +38,12 @@ public class Pot : MonoBehaviour
         isTherePotion = false;
         potionColor.color = regularPotion;
         progressBar.SetActive(false);
+        index = 0;
     }
     private void Update()
     {
+        ChangeLanguage();
+
         if (isTherePotion)
         {
             currentTime += Time.deltaTime;
@@ -89,6 +100,30 @@ public class Pot : MonoBehaviour
         else
         {
             image3.gameObject.SetActive(false);
+        }
+    }
+    public void ChangeLanguage()
+    {
+        UpdateLocales(true);
+        ClientsManager.Instance.client1.ReloadRecipe();
+        ClientsManager.Instance.client2.ReloadRecipe();
+        ClientsManager.Instance.client3.ReloadRecipe();
+    }
+    private void UpdateLocales(bool enable)
+    {
+        if (enable)
+        {
+            for (index = 0; index < recipesLocals.Length; index++)
+            {
+                recipesLocals[index].AssetChanged += UpdateRecipe;
+            }
+        }
+        else
+        {
+            for (index = 0; index < recipes.Length; index++)
+            {
+                recipesLocals[index].AssetChanged -= UpdateRecipe;
+            }
         }
     }
     public int FindEmptySlot(IngredientButton ing)
@@ -215,5 +250,21 @@ public class Pot : MonoBehaviour
         float fill = currentTime / progressTime;
         progressFill.fillAmount = fill;
 
+    }
+    private void OnEnable()
+    {
+        index = 0;
+        UpdateLocales(true);
+    }
+    private void OnDisable()
+    {
+        UpdateLocales(false);
+    }
+
+    void UpdateRecipe(Recipe value)
+    {
+        Debug.Log(index);
+        Debug.Log(value);
+        recipes[index] = value;
     }
 }

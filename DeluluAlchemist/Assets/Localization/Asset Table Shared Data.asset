@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Asset Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Asset Table
+  m_TableCollectionNameGuidString: 8b9c0481ff3ed21448d607a9acc5031d
+  m_Entries:
+  - m_Id: 18404216832
+    m_Key: Sen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43490349056
+    m_Key: "Si\u0142a"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57478352896
+    m_Key: "Szybko\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76424024064
+    m_Key: Trucizna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99064877056
+    m_Key: Wzrok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115921784832
+    m_Key: Zdrowie
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 6473729198941798545
+  m_KeyGenerator:
+    rid: 6473729198941798544
+  references:
+    version: 2
+    RefIds:
+    - rid: 6473729198941798544
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1763584444131
+    - rid: 6473729198941798545
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 18404216832
+          m_TableCodes:
+          - pl
+          - en
+        - m_KeyId: 43490349056
+          m_TableCodes:
+          - pl
+          - en
+        - m_KeyId: 57478352896
+          m_TableCodes:
+          - pl
+          - en
+        - m_KeyId: 76424024064
+          m_TableCodes:
+          - pl
+          - en
+        - m_KeyId: 99064877056
+          m_TableCodes:
+          - pl
+          - en
+        - m_KeyId: 115921784832
+          m_TableCodes:
+          - pl
+          - en
+        m_TypeString: Recipe, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null

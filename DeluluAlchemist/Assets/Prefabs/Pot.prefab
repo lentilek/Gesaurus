@@ -601,6 +601,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b025639900c0a645aea1f7721bd1643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recipesLocals:
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 99064877056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 43490349056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 18404216832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 57478352896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 76424024064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+  - m_TableReference:
+      m_TableCollectionName: GUID:8b9c0481ff3ed21448d607a9acc5031d
+    m_TableEntryReference:
+      m_KeyId: 115921784832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
   recipes:
   - {fileID: 11400000, guid: 50bad7ecdeea5a448865af3625b68ab2, type: 2}
   - {fileID: 11400000, guid: 5dde97b3bf354794588168abee2554d6, type: 2}
