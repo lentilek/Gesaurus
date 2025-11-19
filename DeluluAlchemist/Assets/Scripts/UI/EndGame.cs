@@ -36,10 +36,10 @@ public class EndGame : MonoBehaviour
         unhappyClients += EndDay.Instance.unhappyClients;
         ignoredClients += EndDay.Instance.ignoredClients;
 
-        daysTXT.text = $"Dzieñ: {GameManager.Instance.days}";
-        happyClientsTXT.text = $"Zadowoleni klienci: {happyClients}";
-        unhappyClientsTXT.text = $"Niezadowoleni klienci: {unhappyClients}";
-        ignoredClientsTXT.text = $"Nieobs³u¿eni klienci: {ignoredClients}";
+        daysTXT.text = $"{GameManager.Instance.days}";
+        happyClientsTXT.text = $"{happyClients}";
+        unhappyClientsTXT.text = $"{unhappyClients}";
+        ignoredClientsTXT.text = $"{ignoredClients}";
 
         endGame.SetActive(true);
     }

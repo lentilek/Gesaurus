@@ -6,9 +6,10 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    [SerializeField] private AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField] private AudioClip[] trash, mix, clientGood, clientBad, 
         clientNothing, inPot, outPot, replenish, view, click, hover;
+    [HideInInspector] public float volume;
     private void Awake()
     {
         if (Instance == null)
@@ -25,37 +26,37 @@ public class AudioManager : MonoBehaviour
         switch (clip)
         {
             case "trash":
-                audioSource.PlayOneShot(trash[Random.Range(0, trash.Length)], .22f); 
+                audioSource.PlayOneShot(trash[Random.Range(0, trash.Length)], .22f * volume); 
                 break;
             case "mix":
-                audioSource.PlayOneShot(mix[Random.Range(0, mix.Length)]);
+                audioSource.PlayOneShot(mix[Random.Range(0, mix.Length)], volume);
                 break;
             case "clientGood":
-                audioSource.PlayOneShot(clientGood[Random.Range(0, clientGood.Length)]);
+                audioSource.PlayOneShot(clientGood[Random.Range(0, clientGood.Length)], volume);
                 break;
             case "clientBad":
-                audioSource.PlayOneShot(clientBad[Random.Range(0, clientBad.Length)]);
+                audioSource.PlayOneShot(clientBad[Random.Range(0, clientBad.Length)], volume);
                 break;
             case "clientNothing":
-                audioSource.PlayOneShot(clientNothing[Random.Range(0, clientNothing.Length)], 2f);
+                audioSource.PlayOneShot(clientNothing[Random.Range(0, clientNothing.Length)], 2f * volume);
                 break;
             case "outPot":
-                audioSource.PlayOneShot(outPot[Random.Range(0, outPot.Length)], 6f);
+                audioSource.PlayOneShot(outPot[Random.Range(0, outPot.Length)], 6f * volume);
                 break;
             case "replenish":
-                audioSource.PlayOneShot(replenish[Random.Range(0, replenish.Length)], 1.5f);
+                audioSource.PlayOneShot(replenish[Random.Range(0, replenish.Length)], 1.5f * volume);
                 break;
             case "inPot":
-                audioSource.PlayOneShot(inPot[Random.Range(0, inPot.Length)], .7f);
+                audioSource.PlayOneShot(inPot[Random.Range(0, inPot.Length)], .7f * volume);
                 break;
             case "view":
-                audioSource.PlayOneShot(view[Random.Range(0, view.Length)]);
+                audioSource.PlayOneShot(view[Random.Range(0, view.Length)], volume);
                 break;
             case "click":
-                audioSource.PlayOneShot(click[Random.Range(0, click.Length)], .75f);
+                audioSource.PlayOneShot(click[Random.Range(0, click.Length)], .75f * volume);
                 break;
             case "hover":
-                audioSource.PlayOneShot(hover[Random.Range(0, hover.Length)], .15f);
+                audioSource.PlayOneShot(hover[Random.Range(0, hover.Length)], .15f * volume);
                 break;
             default: break;
         }

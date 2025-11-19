@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization.Settings;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         days = 1;
         ClientNumberRandom();
 
-        dayCounter.text = $"Dzieñ: {days}";
+        dayCounter.text = $"{days}";
         MagicCounter();
         ReputationCounter();
     }

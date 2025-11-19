@@ -26,10 +26,10 @@ public class EndDay : MonoBehaviour
         Time.timeScale = 0f;
 
         ClientsManager.Instance.StopClients();
-        daysTXT.text = $"Dzieñ: {GameManager.Instance.days}";
-        happyClientsTXT.text = $"Zadowoleni klienci dzisiaj: {happyClients}";
-        unhappyClientsTXT.text = $"Niezadowoleni klienci dzisiaj: {unhappyClients}";
-        ignoredClientsTXT.text = $"Nieobs³u¿eni klienci dzisiaj: {ignoredClients}";
+        daysTXT.text = $"{GameManager.Instance.days}";
+        happyClientsTXT.text = $"{happyClients}";
+        unhappyClientsTXT.text = $"{unhappyClients}";
+        ignoredClientsTXT.text = $"{ignoredClients}";
 
         endDay.SetActive(true);
     }
@@ -38,7 +38,7 @@ public class EndDay : MonoBehaviour
         AudioManager.Instance.PlaySound("click");
 
         GameManager.Instance.days++;
-        GameManager.Instance.dayCounter.text = $"Dzieñ: {GameManager.Instance.days}";
+        GameManager.Instance.dayCounter.text = $"{GameManager.Instance.days}";
         if (GameManager.Instance.days > GameManager.Instance.easyDays) GameManager.Instance.easyModeOn = false;
 
         ClientsManager.Instance.EmptyClients();
