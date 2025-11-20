@@ -124,8 +124,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30317301338112
-    m_Localized: "No i nadszed\u0142 ten dzie\u0144! Dzisiaj oficjalnie otwieram
-      m\xF3j sklep z miksturami. Oby klienci byli zadowoleni! \n(A mikstury dzia\u0142a\u0142y)."
+    m_Localized: "Well, the day has come! Today I officially open my potion shop.
+      I hope my customers will be happy! \n(And the potions will work.)"
     m_Metadata:
       m_Items: []
   - m_Id: 30335856939008
@@ -133,47 +133,45 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30439141675008
-    m_Localized: "Oh! Pojawi\u0142 si\u0119 pierwszy klient! Hm... Problemy z oczami?
-      Chyba wiem co na to poradzi\u0107! Przecie\u017C marchewki pomagaj\u0105 na
-      wzrok!  "
+    m_Localized: "Oh! The first customer has arrived! Hmm\u2026 Eye problems? I think
+      I know what to do about that! Carrots are good for your eyesight!"
     m_Metadata:
       m_Items: []
   - m_Id: 30452517310464
-    m_Localized: "Kliknij strza\u0142k\u0119 \u017Ceby zmieni\u0107 widok. "
+    m_Localized: Click the arrow to change the view.
     m_Metadata:
       m_Items: []
   - m_Id: 30494305161216
-    m_Localized: "Marchewki... I co jeszcze? Jak wzrok... to mo\u017Ce dodam do tego
-      oczy? Chyba nie zaszkodzi. Huh...Przyda\u0142oby si\u0119 co\u015B jeszcze,
-      mo\u017Ce pokrzywa?  "
+    m_Localized: "Carrots\u2026 And what else? If it's eyesight\u2026 maybe I should
+      add eyes? I guess it can't hurt. Huh\u2026 Something else would be useful,
+      maybe nettle? "
     m_Metadata:
       m_Items: []
   - m_Id: 30506418311168
-    m_Localized: "Kliknij sk\u0142adnik \u017Ceby go w\u0142o\u017Cy\u0107 do kot\u0142a.
-      Sk\u0142adniki w kotle mo\u017Cesz klikn\u0105\u0107 \u017Ceby je wyci\u0105gn\u0105\u0107. "
+    m_Localized: Click on an ingredient to put it into the cauldron, you can click
+      on ingredients in the cauldron to take them out.
     m_Metadata:
       m_Items: []
   - m_Id: 30539574284288
-    m_Localized: "Oj, nie, ta mikstura daje mi z\u0142e wibracje, zdecydowanie nie
-      zadzia\u0142a... Ale mog\u0119 i tak to ugotowa\u0107 i nakarmi\u0107 Szczawika.
-      Biedaczek zawsze jest g\u0142odny.  "
+    m_Localized: "Oh no, this concoction is giving me bad vibes, it definitely won't
+      work\u2026 But I might as well cook it and feed it to Sorrel anyway. The poor
+      thing is always hungry."
     m_Metadata:
       m_Items: []
   - m_Id: 30554208210944
-    m_Localized: "Kliknij obrazek na kotle \u017Ceby ugotowa\u0107 mikstur\u0119.
-      Niechcianymi miksturami mo\u017Cesz nakarmi\u0107 Szczawika \u017Ceby si\u0119
-      ich pozby\u0107, po prostu go kliknij, gdy mikstura sko\u0144czy si\u0119 gotowa\u0107. "
+    m_Localized: Click the image on the cauldron to brew a potion. You can feed unwanted
+      potions to Sorrel to get rid of them; simply click him when the potion finishes
+      cooking.
     m_Metadata:
       m_Items: []
   - m_Id: 30591898226688
-    m_Localized: "Musz\u0119 teraz uzupe\u0142ni\u0107 zapasy.  "
+    m_Localized: I need to restock my supplies now.
     m_Metadata:
       m_Items: []
   - m_Id: 30605940756480
-    m_Localized: "Kliknij na wyszarzone sk\u0142adniki \u017Ceby je uzupe\u0142ni\u0107,
-      dopiero wtedy mo\u017Cesz ich u\u017Cy\u0107 ponownie. \n\nPami\u0119taj, \u017Ce
-      ka\u017Cde uzupe\u0142nienie kosztuje ci\u0119 Kul\u0119 Magii, widoczn\u0105
-      w prawym rogu. "
+    m_Localized: "Click on grayed-out ingredients to restock them, only then can
+      you use them again. \n\nRemember that each restock costs you a Magic Orb, visible
+      in the upper-right corner."
     m_Metadata:
       m_Items: []
   - m_Id: 30619333169152
@@ -181,32 +179,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30651717390336
-    m_Localized: "Jeszcze raz. Marchewka, oko i... Emm... Wiem! Ryba! Przecie\u017C
-      ryby te\u017C maj\u0105 oczy! I s\u0105 zdrowe! Tak, to jest to!  "
+    m_Localized: "Once again. Carrot, eye, and\u2026 Umm\u2026 I know! Fish! Fish
+      have eyes too! And they're healthy! Yes, that's it!"
     m_Metadata:
       m_Items: []
   - m_Id: 30662542888960
-    m_Localized: "Ugotuj odpowiedni\u0105 mikstur\u0119. Reakcja czarodzieja powie
-      ci, czy mikstura jest w\u0142a\u015Bciwa. "
+    m_Localized: Cook the appropriate potion. The wizard's reaction will tell you
+      if the potion is correct.
     m_Metadata:
       m_Items: []
   - m_Id: 30702984368128
-    m_Localized: "\u015Awietnie! Teraz dam j\u0105 klientowi! Bardzo prosze, zam\xF3wiona
-      mikstura~  "
+    m_Localized: Great! Now I'll give it to the customer! Here you go, the potion
+      you ordered~
     m_Metadata:
       m_Items: []
   - m_Id: 30751353081856
-    m_Localized: "U\u017Cyj strza\u0142ki \u017Ceby wr\xF3ci\u0107 do klienta. Widzisz
-      ikonk\u0119 mikstury? Je\u015Bli jest zielona to przygotowana mikstura pasuje
-      do tego klienta. Zap\u0142aci ci on 3 lub 4 Kule Magii, a ty zyskasz troch\u0119
-      reputacji (tych gwiazdek). "
+    m_Localized: Use the arrow to return to the client. See the potion icon? If it's
+      green, the prepared potion matches that client. They'll pay you 3 or 4 Magic
+      Orbs, and you'll gain some reputation (these little stars).
     m_Metadata:
       m_Items: []
   - m_Id: 30783238180864
-    m_Localized: "Mo\u017Cesz da\u0107 klientowi te\u017C inn\u0105 mikstur\u0119.
-      Zap\u0142aci ci tyle samo, ale mikstura nie b\u0119dzie przekonuj\u0105ca i
-      stracisz troch\u0119 reputacji. \n\nLepszo to ni\u017C nic nie poda\u0107.
-      Wtedy znacznie utracisz reputacj\u0119. "
+    m_Localized: "You could also give the customer a different potion. They'll pay
+      you the same amount, but the potion won't be convincing, and you'll lose some
+      reputation. \n\nIt's better than giving them nothing at all, which will significantly
+      damage your reputation."
     m_Metadata:
       m_Items: []
   - m_Id: 30794202091520
@@ -214,10 +211,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30824078118912
-    m_Localized: "Klienci maj\u0105 swoj\u0105 cierpliwo\u015B\u0107. Je\u015Bli
-      spadnie ona do 0 to sobie p\xF3jd\u0105, a ty stracisz reputacj\u0119. \n\nI
-      nie pr\xF3buj im czego\u015B poda\u0107 je\u015Bli nie masz ugotowanej mikstury.
-      Tylko bardziej si\u0119 zniecierpliwi\u0105. "
+    m_Localized: "Customers have their patience. If it drops to 0, they'll leave,
+      and you'll lose your reputation. \n\nAnd don't try to serve them something
+      if you don't have the potion ready. They'll only get more impatient."
     m_Metadata:
       m_Items: []
   - m_Id: 30834907811840
@@ -225,14 +221,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30875827441664
-    m_Localized: "\u015Awietnie! Teraz tylko wytrzyma\u0107 do ko\u0144ca dnia! "
+    m_Localized: Great! Now I just have to hold on until the end of the day!
     m_Metadata:
       m_Items: []
   - m_Id: 30893149917184
-    m_Localized: "Je\u015Bli reputacja spadnie do -10 (mo\u017Cesz mie\u0107 maksymalnie
-      10) lub na koniec dnia nie b\u0119dziesz mie\u0107 Kul Magii rozgrywka si\u0119
-      zako\u0144czy. \n\nNa koniec dnia mo\u017Cesz te\u017C zdecydowa\u0107 \u017Ceby
-      sko\u0144czy\u0107. Albo gra\u0107 w niesko\u0144czono\u015B\u0107. "
+    m_Localized: "If your reputation drops to -10 (you can have a maximum of 10)
+      or you run out of Magic Orbs at the end of the day, the game will end. \n\nAt
+      the end of the day, you can also decide to finish the game. Or play indefinitely."
     m_Metadata:
       m_Items: []
   - m_Id: 30905288232960
@@ -240,12 +235,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 30942068084736
-    m_Localized: "W ci\u0105gu dnia pojawi si\u0119 od 7 do 10 klient\xF3w. Pierwsze
-      3 dni gry s\u0105 \u0142atwiejsze. Klienci pojawiaj\u0105 si\u0119 rzadziej
-      i s\u0105 bardziej cierpliwi, to czas \u017Ceby opanowa\u0107 tworzenie mikstur.
-      \n\nSam musisz odkry\u0107 przepisy na konkretny rodzaj dolegliwo\u015Bci,
-      ale miny czarodzieja podpowiedz\u0105 ci czy mikstura nada si\u0119 dla kt\xF3rego\u015B
-      z klient\xF3w czy nie. Powodzenia! "
+    m_Localized: "You'll have 7 to 10 clients a day. The first three days of the
+      game are easier. Clients appear less frequently and are more patient; this
+      is the time to master potion-making. \n\nYou'll need to discover recipes for
+      specific ailments, but the wizard's expressions will tell you whether a potion
+      is suitable for a particular client. Good luck!"
     m_Metadata:
       m_Items: []
   - m_Id: 30963807162368
