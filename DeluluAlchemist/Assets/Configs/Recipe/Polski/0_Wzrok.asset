@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: Wzrok
+  m_Name: 0_Wzrok
   m_EditorClassIdentifier: 
   recName: Wzrok
   descriptions:

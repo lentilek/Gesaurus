@@ -17,7 +17,6 @@ public class Pot : MonoBehaviour
 
     public LocalizedRecipe[] recipesLocals;
     public Recipe[] recipes;
-    private int index;
 
     [HideInInspector]public IngredientButton ing1, ing2, ing3;
 
@@ -38,7 +37,6 @@ public class Pot : MonoBehaviour
         isTherePotion = false;
         potionColor.color = regularPotion;
         progressBar.SetActive(false);
-        index = 0;
     }
     private void Update()
     {
@@ -108,21 +106,34 @@ public class Pot : MonoBehaviour
         ClientsManager.Instance.client1.ReloadRecipe();
         ClientsManager.Instance.client2.ReloadRecipe();
         ClientsManager.Instance.client3.ReloadRecipe();
+        if (ing1 != null && ing2 != null && ing3 != null && isTherePotion && !progressBar.activeSelf)
+        {
+            foreach (var rec in recipes)
+            {
+                if (rec.ing.Contains(ing1.ingredient) && rec.ing.Contains(ing2.ingredient)
+                    && rec.ing.Contains(ing3.ingredient))
+                {
+                    currentRecipe = rec;
+                    potionColor.color = rec.potionColor;
+                    break;
+                }
+            }
+        }
     }
     private void UpdateLocales(bool enable)
     {
         if (enable)
         {
-            for (index = 0; index < recipesLocals.Length; index++)
+            foreach (var rec in recipesLocals)
             {
-                recipesLocals[index].AssetChanged += UpdateRecipe;
+                rec.AssetChanged += UpdateRecipe;
             }
         }
         else
         {
-            for (index = 0; index < recipes.Length; index++)
+            foreach (var rec in recipesLocals)
             {
-                recipesLocals[index].AssetChanged -= UpdateRecipe;
+                rec.AssetChanged -= UpdateRecipe;
             }
         }
     }
@@ -253,7 +264,6 @@ public class Pot : MonoBehaviour
     }
     private void OnEnable()
     {
-        index = 0;
         UpdateLocales(true);
     }
     private void OnDisable()
@@ -263,8 +273,6 @@ public class Pot : MonoBehaviour
 
     void UpdateRecipe(Recipe value)
     {
-        Debug.Log(index);
-        Debug.Log(value);
-        recipes[index] = value;
+        recipes[value.index] = value;
     }
 }

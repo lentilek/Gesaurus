@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: "Si\u0142a"
+  m_Name: "1_Si\u0142a"
   m_EditorClassIdentifier: 
-  recName: Strength
+  recName: "Si\u0142a"
+  index: 1
   descriptions:
-  - Ugh, I don't have strength to do anything...
-  - Soo... Got something to strengthen bones?
-  - It's been six months since my last gym visit. You know what I need.
+  - "Ugh, nie mam si\u0142y nawet nosi\u0107 w\u0142asnych zakup\xF3w\u2026"
+  - "Masz co\u015B na z\u0142aman\u0105 r\u0119k\u0119? Albo kruche ko\u015Bci?"
+  - "Heh... Min\u0119\u0142o p\xF3\u0142 roku od ostatniej wizyty na si\u0142owni...
+    Wiesz jak jest..."
   potionColor: {r: 0.645283, g: 0.30559623, b: 0.40784442, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}

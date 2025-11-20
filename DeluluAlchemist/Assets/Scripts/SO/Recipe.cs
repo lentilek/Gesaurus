@@ -7,6 +7,7 @@ using UnityEngine;
 public class Recipe : ScriptableObject
 {
     public string recName;
+    public int index;
     public string[] descriptions;
     public Color potionColor;
     public Ingredient[] ing;

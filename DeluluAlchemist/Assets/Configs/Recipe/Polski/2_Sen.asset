@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: Sen
+  m_Name: 2_Sen
   m_EditorClassIdentifier: 
-  recName: Sleep
+  recName: Sen
+  index: 2
   descriptions:
-  - I can't sleep. Can you help me?
-  - Recently I've had trouble sleeping. Could you do anything?
-  - Do you have anything calming to make me sleep better?
+  - "Nie mog\u0119 spa\u0107 od kilku dni, pomo\u017Cesz mi?"
+  - "Nie potrafi\u0119 ostatnio zmru\u017Cy\u0107 oka. Masz co\u015B dla mnie?"
+  - "Masz co\u015B uspakajaj\u0105cego, \u017Ceby dobrze si\u0119 spa\u0142o?"
   potionColor: {r: 0.64400923, g: 0.34314695, b: 0.7132075, a: 1}
   ing:
   - {fileID: 11400000, guid: 9eb94ee90b828554a985c65c2e332004, type: 2}

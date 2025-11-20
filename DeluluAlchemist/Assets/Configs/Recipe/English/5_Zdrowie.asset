@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: Zdrowie
+  m_Name: 5_Zdrowie
   m_EditorClassIdentifier: 
   recName: Health
+  index: 5
   descriptions:
   - Oh no, I think I'm catching a cold... Do you have anything to strengthen the
     body?

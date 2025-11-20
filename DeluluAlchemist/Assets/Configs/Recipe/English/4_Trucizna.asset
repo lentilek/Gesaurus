@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
-  m_Name: Trucizna
+  m_Name: 4_Trucizna
   m_EditorClassIdentifier: 
-  recName: Trucizna
+  recName: Poison
+  index: 4
   descriptions:
-  - "Kto\u015B mi zalaz\u0142 za sk\xF3r\u0119. Masz co\u015B czym mog\u0119 si\u0119
-    odgry\u017A\u0107?"
-  - "Potrzebne mi co\u015B naprawd\u0119 paskudnego, piek\u0105cego w j\u0119zyk.
-    Nie zadawaj pyta\u0144."
-  - "Masz jak\u0105\u015B trucizn\u0119 na owady albo co\u015B w tym stylu?"
+  - Someone's gotten under my skin. Do you have anything I can use to get back at
+    them?
+  - I need something really nasty, tongue-stinging. Don't ask questions.
+  - Do you have any insect poison or something?
   potionColor: {r: 0.1987255, g: 0.4264151, b: 0.21083663, a: 1}
   ing:
   - {fileID: 11400000, guid: dd67725419ac7744c955c5252b76b0cc, type: 2}
