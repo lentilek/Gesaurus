@@ -18,10 +18,13 @@ MonoBehaviour:
   - Oh no, I think I'm catching a cold... Do you have anything to strengthen the
     body?
   - Uhh... Can you get me some really healthy stuff? One with vitamins and all?
-  - My New Year's resolution is to take care of my health. Do you have anything for
-    me?
+  - My New Year's resolution is to take care of my health. Have anything for me?
   potionColor: {r: 0.7207546, g: 0.1999074, b: 0.4431823, a: 1}
   ing:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
   - {fileID: 11400000, guid: 18f62087f50406b4293cd466255c6174, type: 2}
   - {fileID: 11400000, guid: fcec8d04631f4bc4c94072a392188908, type: 2}
+  ingNames:
+  - 
+  - 
+  - 

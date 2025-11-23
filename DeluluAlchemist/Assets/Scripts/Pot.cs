@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.UI;
@@ -37,6 +36,7 @@ public class Pot : MonoBehaviour
         isTherePotion = false;
         potionColor.color = regularPotion;
         progressBar.SetActive(false);
+        LoadRecipes();
     }
     private void Update()
     {
@@ -98,6 +98,13 @@ public class Pot : MonoBehaviour
         else
         {
             image3.gameObject.SetActive(false);
+        }
+    }
+    public void LoadRecipes()
+    {
+        foreach (var recipe in recipes)
+        {
+            recipe.GetNames();
         }
     }
     public void ChangeLanguage()
@@ -206,8 +213,8 @@ public class Pot : MonoBehaviour
             yield return new WaitForSecondsRealtime(progressTime);
             foreach (var rec in recipes)
             {
-                if (rec.ing.Contains(ing1.ingredient) && rec.ing.Contains(ing2.ingredient) 
-                    && rec.ing.Contains(ing3.ingredient))
+                if (rec.ingNames.Contains(ing1.ingredient.name) && rec.ingNames.Contains(ing2.ingredient.name) 
+                    && rec.ingNames.Contains(ing3.ingredient.name))
                 {
                     currentRecipe = rec;
                     potionColor.color = rec.potionColor;

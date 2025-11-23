@@ -16,43 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dab392b9e1b3f204397af06e676d649c
-  m_SerializeEntries:
-  - m_GUID: 38747bc11e1253f409f14a6f3e1d72c5
-    m_Address: Trucizna
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 62c2d58679e29d14dbe33d7d95f38f3c
-    m_Address: Wzrok
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 64dfda6d280a77c469c3cb2a01f79bab
-    m_Address: Sen
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 758f5aac22c6ed048b8c9de6510bc758
-    m_Address: "Si\u0142a"
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8e4fe43b8dc42fe4c8d336b5264af3fb
-    m_Address: "Szybko\u015B\u0107"
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d18d9d18136a76b4eb7c02821c0557bd
-    m_Address: Zdrowie
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 2ef8c64fe7d533e489eaed3aa0d0277e, type: 2}
   m_SchemaSet:

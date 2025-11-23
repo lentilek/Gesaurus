@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Playables;
 using UnityEngine.UI;
 
 public class IngredientButton : MonoBehaviour

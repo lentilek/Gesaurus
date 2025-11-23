@@ -1,9 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
-using UnityEngine.Localization.SmartFormat.Utilities;
 using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
@@ -53,6 +51,7 @@ public class Settings : MonoBehaviour
         if (Pot.Instance != null)
         {
             Pot.Instance.ChangeLanguage();
+            Pot.Instance.LoadRecipes();
         }
         settingsUI.SetActive(false);
     }

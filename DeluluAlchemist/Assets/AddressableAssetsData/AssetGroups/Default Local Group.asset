@@ -16,7 +16,67 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: eed8992f1406772408e7d6d61245ecb2
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0c8ad27c2ae18fe418c683ac5fec828d
+    m_Address: Assets/Configs/Recipe/Polski/5_Zdrowie.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 117d0c2bceea3ee49b19634889b6bed5
+    m_Address: Assets/Configs/Recipe/Polski/2_Sen.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38747bc11e1253f409f14a6f3e1d72c5
+    m_Address: Assets/Configs/Recipe/English/4_Trucizna.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50bad7ecdeea5a448865af3625b68ab2
+    m_Address: Assets/Configs/Recipe/Polski/0_Wzrok.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5dde97b3bf354794588168abee2554d6
+    m_Address: "Assets/Configs/Recipe/Polski/1_Si\u0142a.asset"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62c2d58679e29d14dbe33d7d95f38f3c
+    m_Address: Assets/Configs/Recipe/English/0_Wzrok.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64dfda6d280a77c469c3cb2a01f79bab
+    m_Address: Assets/Configs/Recipe/English/2_Sen.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 758f5aac22c6ed048b8c9de6510bc758
+    m_Address: "Assets/Configs/Recipe/English/1_Si\u0142a.asset"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e4fe43b8dc42fe4c8d336b5264af3fb
+    m_Address: "Assets/Configs/Recipe/English/3_Szybko\u015B\u0107.asset"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a11ed8b283980f146b9fae4426cd0340
+    m_Address: Assets/Configs/Recipe/Polski/4_Trucizna.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1bc590dd8fd67845872fc6377389d8f
+    m_Address: "Assets/Configs/Recipe/Polski/3_Szybko\u015B\u0107.asset"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d18d9d18136a76b4eb7c02821c0557bd
+    m_Address: Assets/Configs/Recipe/English/5_Zdrowie.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 2ef8c64fe7d533e489eaed3aa0d0277e, type: 2}
   m_SchemaSet:

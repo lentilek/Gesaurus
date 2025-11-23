@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba89705e72d50ef459e188ae68af48ac, type: 3}
   m_Name: "3_Szybko\u015B\u0107"
@@ -23,3 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b97b7f909db511542b910f326b35c180, type: 2}
   - {fileID: 11400000, guid: 3da49811fcd7a6b4cb95f961355855b0, type: 2}
   - {fileID: 11400000, guid: 135e6117a90e5434190eeb95c40d2229, type: 2}
+  ingNames:
+  - 
+  - 
+  - 

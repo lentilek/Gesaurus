@@ -651,6 +651,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b1bc590dd8fd67845872fc6377389d8f, type: 2}
   - {fileID: 11400000, guid: a11ed8b283980f146b9fae4426cd0340, type: 2}
   - {fileID: 11400000, guid: 0c8ad27c2ae18fe418c683ac5fec828d, type: 2}
+  allRecipes:
+  - {fileID: 11400000, guid: 62c2d58679e29d14dbe33d7d95f38f3c, type: 2}
+  - {fileID: 11400000, guid: 758f5aac22c6ed048b8c9de6510bc758, type: 2}
+  - {fileID: 11400000, guid: 64dfda6d280a77c469c3cb2a01f79bab, type: 2}
+  - {fileID: 11400000, guid: 8e4fe43b8dc42fe4c8d336b5264af3fb, type: 2}
+  - {fileID: 11400000, guid: 38747bc11e1253f409f14a6f3e1d72c5, type: 2}
+  - {fileID: 11400000, guid: d18d9d18136a76b4eb7c02821c0557bd, type: 2}
+  - {fileID: 11400000, guid: 50bad7ecdeea5a448865af3625b68ab2, type: 2}
+  - {fileID: 11400000, guid: 5dde97b3bf354794588168abee2554d6, type: 2}
+  - {fileID: 11400000, guid: 117d0c2bceea3ee49b19634889b6bed5, type: 2}
+  - {fileID: 11400000, guid: b1bc590dd8fd67845872fc6377389d8f, type: 2}
+  - {fileID: 11400000, guid: a11ed8b283980f146b9fae4426cd0340, type: 2}
+  - {fileID: 11400000, guid: 0c8ad27c2ae18fe418c683ac5fec828d, type: 2}
   ing1: {fileID: 0}
   ing2: {fileID: 0}
   ing3: {fileID: 0}

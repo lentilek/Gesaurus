@@ -11,4 +11,13 @@ public class Recipe : ScriptableObject
     public string[] descriptions;
     public Color potionColor;
     public Ingredient[] ing;
+    public string[] ingNames;
+
+    public void GetNames()
+    {
+        for (int i =0; i < ing.Length; i++)
+        {
+            ingNames[i] = ing[i].name;
+        }
+    }
 }

@@ -16,19 +16,23 @@ public class Character : MonoBehaviour
 
     public void Emotion(int i)
     {
-        negative.SetActive(false);
-        neutral.SetActive(false);
-        positive.SetActive(false);
-        if (i == 0)
+        if (Time.timeScale == 1f)
         {
-            neutral.SetActive(true);
-        }
-        else if (i == 1)
-        {
-            positive.SetActive(true);
-        }else if (i == -1)
-        {
-            negative.SetActive(true);
+            negative.SetActive(false);
+            neutral.SetActive(false);
+            positive.SetActive(false);
+            if (i == 0)
+            {
+                neutral.SetActive(true);
+            }
+            else if (i == 1)
+            {
+                positive.SetActive(true);
+            }
+            else if (i == -1)
+            {
+                negative.SetActive(true);
+            }
         }
     }
 }

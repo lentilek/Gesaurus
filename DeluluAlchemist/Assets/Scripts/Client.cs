@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,7 +28,7 @@ public class Client : MonoBehaviour
             currentTime -= Time.deltaTime;
             GetCurrentFill();
         }
-        if (Pot.Instance.isTherePotion && recipe == Pot.Instance.currentRecipe)
+        if (Pot.Instance.isTherePotion && Pot.Instance.progressFill.fillAmount >= 1 && IsCorrect())
         {
             GiveButton(false);
         }
@@ -52,7 +49,7 @@ public class Client : MonoBehaviour
     {
         if (Pot.Instance.isTherePotion && Pot.Instance.progressFill.fillAmount >= 1)
         {
-            if (Pot.Instance.currentRecipe == recipe)
+            if (IsCorrect())
             {
                 AudioManager.Instance.PlaySound("clientGood");
                 GameManager.Instance.EarnBalls();
@@ -102,9 +99,9 @@ public class Client : MonoBehaviour
     }
     public bool IsCorrect()
     {
-        if(recipe != null && recipe.ing.Contains(Pot.Instance.ing1.ingredient) 
-            && recipe.ing.Contains(Pot.Instance.ing2.ingredient)
-            && recipe.ing.Contains(Pot.Instance.ing3.ingredient))
+        if(recipe != null && recipe.ingNames.Contains(Pot.Instance.ing1.ingredient.name) 
+            && recipe.ingNames.Contains(Pot.Instance.ing2.ingredient.name)
+            && recipe.ingNames.Contains(Pot.Instance.ing3.ingredient.name))
         {
             return true;
         }
@@ -112,18 +109,21 @@ public class Client : MonoBehaviour
     }
     public void GiveButton(bool normal)
     {
-        SpriteState select = new SpriteState();
-        if (normal)
+        if (Time.timeScale == 1f)
         {
-            select.highlightedSprite = hoverNormal;
-            giveButton.gameObject.GetComponent<Image>().sprite = giveNormal;
-            giveButton.gameObject.GetComponent<Button>().spriteState = select;
-        }
-        else
-        {
-            select.highlightedSprite = hoverGood;
-            giveButton.gameObject.GetComponent<Image>().sprite = giveGood;
-            giveButton.gameObject.GetComponent<Button>().spriteState = select;
+            SpriteState select = new SpriteState();
+            if (normal)
+            {
+                select.highlightedSprite = hoverNormal;
+                giveButton.gameObject.GetComponent<Image>().sprite = giveNormal;
+                giveButton.gameObject.GetComponent<Button>().spriteState = select;
+            }
+            else
+            {
+                select.highlightedSprite = hoverGood;
+                giveButton.gameObject.GetComponent<Image>().sprite = giveGood;
+                giveButton.gameObject.GetComponent<Button>().spriteState = select;
+            }
         }
     }
 }

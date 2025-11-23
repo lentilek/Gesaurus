@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 0_Wzrok
   m_EditorClassIdentifier: 
   recName: Sight
+  index: 0
   descriptions:
   - My glasses don't work as well as they used to... Can you help me?
   - Do you have any good eyes to trade? Or something to improve my eyesight?
@@ -22,3 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3928c7e513e5dd04fa6b6b28ab58af16, type: 2}
   - {fileID: 11400000, guid: b6b9e690dec43b145a268b86f21aef12, type: 2}
   - {fileID: 11400000, guid: fcec8d04631f4bc4c94072a392188908, type: 2}
+  ingNames:
+  - 
+  - 
+  - 
