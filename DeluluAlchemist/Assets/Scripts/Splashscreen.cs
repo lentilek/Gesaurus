@@ -32,6 +32,7 @@ public class Splashscreen : MonoBehaviour
         bjg.DOFade(0, fadeOutDuration);
         yield return new WaitForSeconds(fadeOutDuration);
         bjg.gameObject.SetActive(false);
+        MusicManager.Instance.audioSource.Play();
 
         this.gameObject.SetActive(false);
     }
